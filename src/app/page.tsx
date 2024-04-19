@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Herosection from "./inicio/subcomponents/Herosection";
 import Stats from "./inicio/subcomponents/Stats";
 import Features from "./inicio/subcomponents/Features";
+import ContactCta from "./inicio/subcomponents/ContactCta";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Herosection />
         <Stats />
         <Features />
+        <ContactCta />
       </div>
       <Footer />
     </main>
