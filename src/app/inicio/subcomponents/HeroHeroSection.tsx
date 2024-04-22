@@ -10,6 +10,7 @@ import RosemenLogoWhiteMobile from "@/images/Logos/R-Blanca.png";
 import RosemenLogoDesktop from "@/images/Logos/rosemen-512-Negro-sin-fondo.png";
 import RosemenLogoWhiteDesktop from "@/images/Logos/rosemen-512-Blanco-sin-fondo.png";
 import HeroSectionBackground from "@/images/Backgrounds/HeroSectionBackground.png";
+import HeroSectionBackground2 from "@/images/Backgrounds/HeroSectionBackground2.png";
 import { RxDoubleArrowDown } from "react-icons/rx";
 
 const navigation = [
@@ -27,9 +28,9 @@ export default function Example() {
     <div className="bg-transparent">
       <div className="absolute inset-0 h-screen sm:h-4/5 lg:h-2/4 xl:h-screen 2xl:h-4/5">
         <Image
-          className="object-cover w-full h-full opacity-100"
-          src={HeroSectionBackground}
-          alt="HeroSectionBackground"
+          className="object-cover w-full h-full opacity-100 2xl:mt-12"
+          src={HeroSectionBackground2}
+          alt="HeroSectionBackground2"
         />
       </div>
 
@@ -43,13 +44,13 @@ export default function Example() {
               <span className="sr-only">Rosemen</span>
               <Image
                 className="h-8 w-auto block lg:hidden"
-                src={RosemenLogoWhiteMobile}
-                alt="RosemenLogoWhiteMobile"
+                src={RosemenLogoMobile}
+                alt="RosemenLogoMobile"
               />
               <Image
                 className="h-8 w-auto hidden lg:block"
-                src={RosemenLogoWhiteDesktop}
-                alt="RosemenLogoWhiteDesktop"
+                src={RosemenLogoDesktop}
+                alt="RosemenLogoDesktop"
               />
             </a>
           </div>
@@ -60,7 +61,7 @@ export default function Example() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <HiMenu className="h-6 w-6 text-white" aria-hidden="true" />
+              <HiMenu className="h-6 w-6 text-neutral-900" aria-hidden="true" />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
@@ -68,7 +69,7 @@ export default function Example() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-200 hover:text-gray-300"
+                className="text-sm font-semibold leading-6 text-gray-800 hover:text-gray-900"
               >
                 {item.name}
               </a>
@@ -140,10 +141,10 @@ export default function Example() {
               </div> */}
             </div>
             <div className="text-center xl:text-left">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl xl:text-5xl">
+              <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-6xl xl:text-5xl">
                 Potenciá tu marca con nuestra experiencia y creatividad
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-200">
+              <p className="mt-6 text-lg leading-8 text-neutral-800">
                 Contamos con más de 20 años liderando el mercado publicitario,
                 conectando con marcas y audiencias de manera impactante.
               </p>
@@ -156,7 +157,7 @@ export default function Example() {
                 </a>
                 <a
                   href="/sobrenosotos"
-                  className="text-sm font-semibold leading-6 text-gray-200"
+                  className="text-sm font-semibold leading-6 text-neutral-800"
                 >
                   Conocenos <span aria-hidden="true">→</span>
                 </a>

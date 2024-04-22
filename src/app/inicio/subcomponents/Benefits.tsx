@@ -32,7 +32,7 @@ function Benefits() {
           <h1 className="text-lg text-center sm:text-left font-semibold text-[#720D1C]">
             Beneficios
           </h1>
-          <h1 className="text-xl lg:text-2xl text-center sm:text-left font-bold text-gray-900 mt-4 mb-2">
+          <h1 className="text-2xl lg:text-3xl text-center sm:text-left font-bold text-gray-900 mt-4 mb-2">
             ¿Por las que los clientes eligen nuestra agencia?
           </h1>
           {/* <p className="text-sm">
