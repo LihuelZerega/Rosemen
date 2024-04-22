@@ -25,12 +25,12 @@ export default function Example() {
 
   return (
     <div className="bg-transparent">
-      <div className="absolute inset-0">
-        {/* <Image
+      <div className="absolute inset-0 lg:pb-44 xl:pb-12">
+        <Image
           className="object-cover w-full h-full pb-16 sm:pb-24 lg:pb-96 xl:pb-12 xl:h-4xl 2xl:pb-32 opacity-100"
           src={HeroSectionBackground}
           alt="HeroSectionBackground"
-        /> */}
+        />
       </div>
 
       <header className="absolute inset-x-0 top-0 z-50">
