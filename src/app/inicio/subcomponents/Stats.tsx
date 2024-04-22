@@ -70,14 +70,14 @@ export default function Stats() {
           <span className="text-[#720D1C]">artistas</span> mas influyentes de
           nuestro <span className="text-[#720D1C]">país</span>
         </h2>
-        <motion.div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-          <motion.div
-            ref={ref1}
-            animate={controls1}
-            initial={{ opacity: 0, y: 20 }}
-            transition={{ duration: 0.4 }}
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
-          >
+        <motion.div
+          ref={ref1}
+          animate={controls1}
+          initial={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.4 }}
+          className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
+        >
+          <motion.div className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80">
             <Image
               src={YsyALogo}
               alt="YsyA"
@@ -86,13 +86,7 @@ export default function Stats() {
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
             />
           </motion.div>
-          <motion.div
-            ref={ref2}
-            animate={controls2}
-            initial={{ opacity: 0, y: 20 }}
-            transition={{ duration: 0.6 }}
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
-          >
+          <motion.div className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80">
             <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
               src={WosLogo}
@@ -101,13 +95,7 @@ export default function Stats() {
               height={48}
             />
           </motion.div>
-          <motion.div
-            ref={ref3}
-            animate={controls3}
-            initial={{ opacity: 0, y: 30 }}
-            transition={{ duration: 0.8 }}
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
-          >
+          <motion.div className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80">
             <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
               src={LitKillahLogo}
@@ -116,13 +104,7 @@ export default function Stats() {
               height={48}
             />
           </motion.div>
-          <motion.div
-            ref={ref4}
-            animate={controls4}
-            initial={{ opacity: 0, y: 40 }}
-            transition={{ duration: 1 }}
-            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
-          >
+          <motion.div className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80">
             <Image
               className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
               src={BhaviLogo}
@@ -131,13 +113,7 @@ export default function Stats() {
               height={48}
             />
           </motion.div>
-          <motion.div
-            ref={ref5}
-            animate={controls5}
-            initial={{ opacity: 0, y: 60 }}
-            transition={{ duration: 1.2 }}
-            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
-          >
+          <motion.div className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80">
             <Image
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
               src={NaftaLogo}
