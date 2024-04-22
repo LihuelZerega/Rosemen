@@ -25,9 +25,9 @@ export default function Example() {
 
   return (
     <div className="bg-transparent">
-      <div className="absolute inset-0 lg:pb-44 xl:pb-12">
+      <div className="absolute inset-0 h-screen sm:h-4/5 lg:h-2/4 xl:h-screen 2xl:h-4/5">
         <Image
-          className="object-cover w-full h-full pb-16 sm:pb-24 lg:pb-96 xl:pb-12 xl:h-4xl 2xl:pb-32 opacity-100"
+          className="object-cover w-full h-full opacity-100"
           src={HeroSectionBackground}
           alt="HeroSectionBackground"
         />
