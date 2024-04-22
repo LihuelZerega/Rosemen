@@ -63,7 +63,7 @@ export default function Stats() {
   }, [controls5, inView5]);
 
   return (
-    <div className="bg-white pt-44 pb-24 sm:pb- sm:pt-24 lg:pt-12 xl:pt-24 2xl:pt-32 shadow-sm">
+    <div className="bg-white pt-36 pb-24 sm:pb- sm:pt-24 lg:pt-12 xl:pt-24 2xl:pt-32 shadow-sm">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
           Con la <span className="text-[#720D1C]">confianza</span> de los{" "}
