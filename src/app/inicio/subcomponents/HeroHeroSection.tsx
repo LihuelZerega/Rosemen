@@ -5,6 +5,15 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { HiMenu, HiOutlineX } from "react-icons/hi";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  useDisclosure,
+} from "@nextui-org/modal";
+import { Input } from "@nextui-org/input";
 import RosemenLogoMobile from "@/images/Logos/R-negra.png";
 import RosemenLogoWhiteMobile from "@/images/Logos/R-Blanca.png";
 import RosemenLogoDesktop from "@/images/Logos/rosemen-512-Negro-sin-fondo.png";
@@ -22,6 +31,7 @@ const navigation = [
 ];
 
 export default function Example() {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -76,12 +86,50 @@ export default function Example() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href=""
+            <button
               className="bg-red-800 hover:bg-red-900 rounded-md py-2 px-3 text-sm font-semibold leading-6 text-white"
+              onClick={onOpen}
             >
-              <button>Contactanos</button>
-            </a>
+              Contactanos
+            </button>
+            <Modal
+              isOpen={isOpen}
+              onOpenChange={onOpenChange}
+              placement="top-center"
+            >
+              <ModalContent>
+                {(onClose) => (
+                  <>
+                    <ModalHeader className="flex flex-col gap-1 border-b">
+                      Completá el siguiente formulario para que podamos contactarte!
+                    </ModalHeader>
+                    <ModalBody>
+                      <div>
+                        <div>
+
+                        </div>
+                        <div>
+
+                        <div className="flex flex-row items-center gap-x-2">
+                          <Input
+                            label="Nombre" placeholder="Ingresá tu Nombre"
+                            variant="bordered"
+                            />
+                          <Input label="Apellido" placeholder="Ingresá tu Apellido" variant="bordered" />
+                        </div>
+                        <div className="mt-2">
+                          <Input label="Numero telefonico" placeholder="Ingresá tu Número Telefónico" variant="bordered" />
+                        </div>
+                            </div>
+                      </div>
+                    </ModalBody>
+                    <ModalFooter>
+                      <button onClick={onClose}>Enviar</button>
+                    </ModalFooter>
+                  </>
+                )}
+              </ModalContent>
+            </Modal>
           </div>
         </nav>
         <Dialog

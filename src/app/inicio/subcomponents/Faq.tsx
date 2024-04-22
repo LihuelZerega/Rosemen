@@ -21,15 +21,22 @@ export default function App() {
           .
         </p>
       </div>
+      
       <div className="mx-auto max-w-3xl mt-6">
         <Accordion>
-          <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
+          <AccordionItem key="1" aria-label="Pregunta 1" title="Pregunta 1">
             {defaultContent}
           </AccordionItem>
-          <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
+          <AccordionItem key="2" aria-label="Pregunta 2" title="Pregunta 2">
             {defaultContent}
           </AccordionItem>
-          <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
+          <AccordionItem key="3" aria-label="Pregunta 3" title="Pregunta 3">
+            {defaultContent}
+          </AccordionItem>
+          <AccordionItem key="4" aria-label="Pregunta 4" title="Pregunta 4">
+            {defaultContent}
+          </AccordionItem>
+          <AccordionItem key="5" aria-label="Pregunta 5" title="Pregunta 5">
             {defaultContent}
           </AccordionItem>
         </Accordion>
