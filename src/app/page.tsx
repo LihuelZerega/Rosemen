@@ -5,15 +5,17 @@ import Herosection from "./inicio/subcomponents/Herosection";
 import Stats from "./inicio/subcomponents/Stats";
 import Features from "./inicio/subcomponents/Features";
 import ContactCta from "./inicio/subcomponents/ContactCta";
+import HeroHeroSection from "./inicio/subcomponents/HeroHeroSection";
 
 export default function Home() {
   return (
     <main>
       <div className="mb-20">
-        <NavBar />
+        {/* <NavBar /> */}
       </div>
       <div>
-        <Herosection />
+        <HeroHeroSection />
+        {/* <Herosection /> */}
         <Stats />
         <Features />
         <ContactCta />
