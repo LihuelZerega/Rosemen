@@ -11,16 +11,8 @@ import { motion, useAnimation } from "framer-motion";
 
 export default function Stats() {
   const [ref1, inView1] = useInView({ threshold: 0.2 });
-  const [ref2, inView2] = useInView({ threshold: 0.2 });
-  const [ref3, inView3] = useInView({ threshold: 0.2 });
-  const [ref4, inView4] = useInView({ threshold: 0.2 });
-  const [ref5, inView5] = useInView({ threshold: 0.2 });
 
   const controls1 = useAnimation();
-  const controls2 = useAnimation();
-  const controls3 = useAnimation();
-  const controls4 = useAnimation();
-  const controls5 = useAnimation();
 
   useEffect(() => {
     if (inView1) {
@@ -30,37 +22,6 @@ export default function Stats() {
     }
   }, [controls1, inView1]);
 
-  useEffect(() => {
-    if (inView2) {
-      controls2.start({ opacity: 1, y: 0 });
-    } else {
-      controls2.start({ opacity: 0, y: 20 });
-    }
-  }, [controls2, inView2]);
-
-  useEffect(() => {
-    if (inView3) {
-      controls3.start({ opacity: 1, y: 0 });
-    } else {
-      controls3.start({ opacity: 0, y: 20 });
-    }
-  }, [controls3, inView3]);
-
-  useEffect(() => {
-    if (inView4) {
-      controls4.start({ opacity: 1, y: 0 });
-    } else {
-      controls4.start({ opacity: 0, y: 20 });
-    }
-  }, [controls4, inView4]);
-
-  useEffect(() => {
-    if (inView5) {
-      controls5.start({ opacity: 1, y: 0 });
-    } else {
-      controls5.start({ opacity: 0, y: 20 });
-    }
-  }, [controls5, inView5]);
 
   return (
     <div className="bg-white pt-36 pb-24 sm:pb- sm:pt-24 lg:pt-12 xl:pt-24 2xl:pt-32 shadow-sm">
