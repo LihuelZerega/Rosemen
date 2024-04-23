@@ -7,12 +7,13 @@ import HeroSectionBackground4 from "@/images/Backgrounds/HeroSectionBackground4.
 
 export default function HeroSection() {
   return (
-    <div className="bg-black">
-      <div className="absolute inset-0 h-screen sm:h-4/5 lg:h-2/4 xl:h-screen 2xl:h-4/5">
+    <div className="relative bg-black overflow-hidden">
+      <div className="absolute inset-0">
         <Image
-          className="object-cover w-full h-full opacity-100"
+          className="object-cover w-full h-full opacity-50"
           src={HeroSectionBackground4}
           alt="HeroSectionBackground4"
+          layout="fill"
         />
       </div>
 
@@ -20,7 +21,7 @@ export default function HeroSection() {
         <div className="w-full flex flex-col mt-16">
           <div className="mx-auto xl:mx-left lg:max-w-4xl xl:w-full px-6 xl:px-0 py-32 sm:py-48 lg:py-32">
             <div className="text-center">
-              <h1 className="text-[#720D1C] font-semibold">Clientes</h1>
+              <h1 className="text-red-700 font-semibold">Contacto</h1>
               <h1 className="text-4xl sm:text-6xl lg:text-5xl xl:text-5xl font-bold tracking-tight text-neutral-100">
                 Lorem ipsum dolor sit amet
               </h1>

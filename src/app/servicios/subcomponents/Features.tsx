@@ -61,7 +61,10 @@ function Features() {
             </Carousel>
           </div>
           <div className="flex flex-col w-full md:w-1/2 lg:max-w-md md:pl-4">
-            <h1 id="viapublica" className="text-2xl lg:text-3xl text-center md:text-left font-bold text-[#720D1C] mb-4">
+            <h1
+              id="viapublica"
+              className="text-2xl lg:text-3xl text-center md:text-left font-bold text-[#720D1C] mb-4"
+            >
               Vía Pública
             </h1>
             <p className="text-left font-medium">
@@ -75,7 +78,9 @@ function Features() {
           </div>
         </div>
 
-        <div className="flex flex-col my-12">
+        <hr className="mx-96 mt-12"/>
+        
+        <div className="flex flex-col mt-6">
           <h1 className="font-bold text-xl text-center">Formatos</h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-y-8 gap-x-4 mx-3 mt-6">
             <div className="flex flex-col items-center justify-start hover:scale-105 duration-300 hover:opacity-80">
@@ -159,7 +164,10 @@ function Features() {
       <div className="bg-neutral-50">
         <section className="flex flex-col md:flex-row items-center py-24 lg-mt-24 max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
           <div className="flex-col w-full md:w-1/2 lg:max-w-md md:pl-4">
-            <h1 id="radio" className="text-2xl lg:text-3xl text-center md:text-left font-bold text-[#720D1C] mb-4">
+            <h1
+              id="radio"
+              className="text-2xl lg:text-3xl text-center md:text-left font-bold text-[#720D1C] mb-4"
+            >
               Radio
             </h1>
             <p className="text-left font-medium">
@@ -182,7 +190,10 @@ function Features() {
 
       <section className="flex flex-col md:flex-row-reverse items-center justify-between mt-12 lg:mt-24 max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
         <div className="flex-col w-full md:w-1/2 lg:max-w-md">
-          <h1 id="television" className="text-2xl lg:text-3xl text-center md:text-left font-bold text-[#720D1C] mb-4">
+          <h1
+            id="television"
+            className="text-2xl lg:text-3xl text-center md:text-left font-bold text-[#720D1C] mb-4"
+          >
             Televisión
           </h1>
           <p className="text-left font-medium">
