@@ -106,44 +106,87 @@ function NavBar() {
               <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
-                placement="top-center"
+                placement="center"
+                className="max-w-80 md:max-w-lg"
               >
                 <ModalContent>
                   {(onClose) => (
                     <>
-                      <ModalHeader className="flex flex-col gap-1 border-b">
-                        Completá el siguiente formulario para que podamos
-                        contactarte!
+                      <ModalHeader className="flex flex-col items-center gap-1">
+                        <div className="h-12 w-12">
+                          <Image
+                            src={RosemenLogoMobile}
+                            width={50}
+                            height={50}
+                            alt="RosemenLogoMobile"
+                          />
+                        </div>
+                        <h1 className="text-sm md:text-base text-center mt-1">
+                          Completá el siguiente formulario para <br /> que
+                          podamos contactarte!
+                        </h1>
                       </ModalHeader>
                       <ModalBody>
                         <div>
                           <div></div>
                           <div>
-                            <div className="flex flex-row items-center gap-x-2">
-                              <Input
-                                label="Nombre"
-                                placeholder="Ingresá tu Nombre"
-                                variant="bordered"
-                              />
-                              <Input
-                                label="Apellido"
-                                placeholder="Ingresá tu Apellido"
-                                variant="bordered"
-                              />
+                            <div className="flex flex-col md:flex-row items-center gap-2 border-t pt-4">
+                              <div className="w-full">
+                                <label
+                                  htmlFor="name"
+                                  className="block text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  Nombre
+                                </label>
+                                <input
+                                  id="name"
+                                  name="name"
+                                  type="text"
+                                  className="block w-full rounded-md border-0 py-2 pl-2 pr-0 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-sm sm:text-sm sm:leading-6"
+                                  placeholder="Ingresá tu Nombre"
+                                />
+                              </div>
+                              <div className="w-full">
+                                <label
+                                  htmlFor="lastname"
+                                  className="block text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  Apellido
+                                </label>
+                                <input
+                                  id="lastname"
+                                  name="lastname"
+                                  type="text"
+                                  className="block w-full rounded-md border-0 py-2 pl-2 pr-0 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-sm sm:text-sm sm:leading-6"
+                                  placeholder="Ingresá tu Apellido"
+                                />
+                              </div>
                             </div>
                             <div className="mt-2">
-                              <Input
-                                label="Numero telefonico"
-                                placeholder="Ingresá tu Número Telefónico"
-                                variant="bordered"
-                              />
+                            <div>
+                                <label
+                                  htmlFor="phonenumber"
+                                  className="block text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  Numero Telefonico
+                                </label>
+                                <input
+                                  id="phonenumber"
+                                  name="phonenumber"
+                                  type="tel"
+                                  className="block w-full rounded-md border-0 py-2 pl-2 pr-0 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-sm sm:text-sm sm:leading-6"
+                                  placeholder="Ingresá tu numero de telefono"
+                                />
+                              </div>
+                            </div>
+                            <div className="w-full mt-2">
+                              <button className="bg-red-800 hover:bg-red-900 rounded-md py-2 px-2 lg:py-2 lg:px-3 text-sm font-semibold leading-6 text-white w-full">
+                                Enviar
+                              </button>
                             </div>
                           </div>
                         </div>
                       </ModalBody>
-                      <ModalFooter>
-                        <button onClick={onClose}>Enviar</button>
-                      </ModalFooter>
                     </>
                   )}
                 </ModalContent>
