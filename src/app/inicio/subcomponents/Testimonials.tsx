@@ -48,7 +48,7 @@ function Testimonials() {
               </svg>
             </div>
             <blockquote className="mt-7">
-              <p className="text-xl leading-relaxed text-gray-800">
+              <p className="text-base leading-relaxed text-gray-800">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam”
@@ -106,7 +106,7 @@ function Testimonials() {
               </svg>
             </div>
             <blockquote className="mt-7">
-              <p className="text-xl leading-relaxed text-gray-800">
+              <p className="text-base leading-relaxed text-gray-800">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam”

@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div>
       <section className="py-10 bg-white sm:pt-16 lg:pt-24">
-        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div className="px-4 mx-auto sm:px-6 lg:px-8 w-full">
           <hr className="mb-10"/>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-y-12 gap-x-8 xl:gap-x-12">
             <div className="col-span-2 md:col-span-4 xl:pr-8">
@@ -216,7 +216,7 @@ function Footer() {
 
           <hr className="mt-16 mb-10 border-gray-200" />
 
-          <div className="sm:flex sm:items-center sm:justify-between">
+          <div className="sm:flex sm:items-center sm:justify-between max-w-7xl">
             <p className="text-sm text-gray-600">
               © Copyright 2024, Todos los derechos reservados por Rosemen
             </p>

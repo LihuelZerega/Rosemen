@@ -13,12 +13,9 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main>
-      <div className="mb-20">
-        {/* <NavBar /> */}
-      </div>
       <div>
+        <NavBar />
         <HeroHeroSection />
-        {/* <Herosection /> */}
         <Stats />
         <Benefits />
         <Features />

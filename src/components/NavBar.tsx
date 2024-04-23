@@ -1,14 +1,33 @@
 "use client";
 import React from "react";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { Dialog } from "@headlessui/react";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  useDisclosure,
+} from "@nextui-org/modal";
+import { Input } from "@nextui-org/input";
 import RosemenLogoMobile from "@/images/Logos/R-negra.png";
+import RosemenLogoWhiteMobile from "@/images/Logos/R-Blanca.png";
 import RosemenLogoDesktop from "@/images/Logos/rosemen-512-Negro-sin-fondo.png";
+import RosemenLogoWhiteDesktop from "@/images/Logos/rosemen-512-Blanco-sin-fondo.png";
 import { HiMenu, HiOutlineX } from "react-icons/hi";
 import Image from "next/image";
 
-function NavBarInicio() {
+function NavBar() {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+
+  const logoMobile = isHomePage ? RosemenLogoMobile : RosemenLogoWhiteMobile;
+  const logoDesktop = isHomePage ? RosemenLogoDesktop : RosemenLogoWhiteDesktop;
 
   const navigation = [
     { name: "Inicio", href: "/" },
@@ -19,17 +38,29 @@ function NavBarInicio() {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-transparent">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
-          className="flex items-center justify-between p-6 lg:px-8 bg-red-white shadow-sm"
+          className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Rosemen</span>
-              <Image className="h-8 w-auto block lg:hidden" src={RosemenLogoMobile} alt="RosemenLogoMobile" />
-              <Image className="h-8 w-auto hidden lg:block" src={RosemenLogoDesktop} alt="RosemenLogoDesktop" />
+              <Image
+                className="h-8 w-auto block lg:hidden"
+                src={logoMobile}
+                alt={
+                  isHomePage ? "RosemenLogoMobile" : "RosemenLogoWhiteMobile"
+                }
+              />
+              <Image
+                className="h-8 w-auto hidden lg:block"
+                src={logoDesktop}
+                alt={
+                  isHomePage ? "RosemenLogoDesktop" : "RosemenLogoWhiteDesktop"
+                }
+              />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -39,7 +70,14 @@ function NavBarInicio() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <HiMenu className="h-6 w-6" aria-hidden="true" />
+              <HiMenu
+                className={`h-6 w-6 ${
+                  isHomePage
+                    ? "text-gray-800 hover:text-gray-900"
+                    : "text-gray-100 hover:text-gray-200"
+                }`}
+                aria-hidden="true"
+              />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
@@ -47,11 +85,68 @@ function NavBarInicio() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-800 hover:text-[#040014]"
+                className={`text-sm font-semibold leading-6 ${
+                  isHomePage
+                    ? "text-gray-800 hover:text-gray-900"
+                    : "text-gray-100 hover:text-gray-200"
+                }`}
               >
                 {item.name}
               </a>
             ))}
+          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <button
+              className="bg-red-800 hover:bg-red-900 rounded-md py-2 px-3 text-sm font-semibold leading-6 text-white"
+              onClick={onOpen}
+            >
+              Contactanos
+            </button>
+            <Modal
+              isOpen={isOpen}
+              onOpenChange={onOpenChange}
+              placement="top-center"
+            >
+              <ModalContent>
+                {(onClose) => (
+                  <>
+                    <ModalHeader className="flex flex-col gap-1 border-b">
+                      Completá el siguiente formulario para que podamos
+                      contactarte!
+                    </ModalHeader>
+                    <ModalBody>
+                      <div>
+                        <div></div>
+                        <div>
+                          <div className="flex flex-row items-center gap-x-2">
+                            <Input
+                              label="Nombre"
+                              placeholder="Ingresá tu Nombre"
+                              variant="bordered"
+                            />
+                            <Input
+                              label="Apellido"
+                              placeholder="Ingresá tu Apellido"
+                              variant="bordered"
+                            />
+                          </div>
+                          <div className="mt-2">
+                            <Input
+                              label="Numero telefonico"
+                              placeholder="Ingresá tu Número Telefónico"
+                              variant="bordered"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </ModalBody>
+                    <ModalFooter>
+                      <button onClick={onClose}>Enviar</button>
+                    </ModalFooter>
+                  </>
+                )}
+              </ModalContent>
+            </Modal>
           </div>
         </nav>
 
@@ -99,4 +194,4 @@ function NavBarInicio() {
   );
 }
 
-export default NavBarInicio;
+export default NavBar;
