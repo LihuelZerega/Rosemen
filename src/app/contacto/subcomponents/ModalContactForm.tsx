@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { FaPhone } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
-function ContactForm() {
+function ModalContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     lastname: "",
@@ -35,7 +35,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row-reverse md:items-start md:justify-around w-full mt-12 md:max-w-6xl md:mx-auto p-6 sm:px-6 lg:px-8">
+    <div>
       <div className="flex flex-col w-full md:max-w-md">
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col md:flex-row w-full sm:gap-2 pt-4">
@@ -121,59 +121,8 @@ function ContactForm() {
           </div>
         </form>
       </div>
-
-      <h1 className="block md:hidden text-xl font-bold text-center my-8 pt-8 border-t-1 md:border-t-0 md:border-r-1 border-gray-200">
-        Datos de Contacto
-      </h1>
-      <div className="relative grid grid-cols-1 text-center gap-y-8 justify-center gap-x-12 mt-6 md:mt-0">
-        <div className="col-span-1">
-          <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow mb-4">
-            <span className="text-xl font-semibold text-[#720D1C]">
-              <FaPhone />
-            </span>
-          </div>
-          <a
-            href="tel:+5491160161083"
-            title=""
-            className="mt-6 text-base text-center font-semibold leading-tight text-gray-900 md:mt-10"
-          >
-            {" "}
-            +54 9 11-6016-1083{" "}
-          </a>
-        </div>
-        <div className="col-span-1">
-          <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow mb-4">
-            <span className="text-xl font-semibold text-[#720D1C]">
-              <FaPhone />
-            </span>
-          </div>
-          <a
-            href="tel:+5491128244070"
-            title=""
-            className="mt-6 text-base text-center font-semibold leading-tight text-gray-900 md:mt-10"
-          >
-            {" "}
-            +54 9 11-2824-4070{" "}
-          </a>
-        </div>
-        <div className="col-span-1">
-          <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow mb-4">
-            <span className="text-xl font-semibold text-[#720D1C]">
-              <MdOutlineEmail />
-            </span>
-          </div>
-          <a
-            href="mailto:info@rosemen.com.ar"
-            title=""
-            className="mt-6 text-base text-center font-semibold leading-tight text-gray-900 md:mt-10"
-          >
-            {" "}
-            info@rosemen.com.ar{" "}
-          </a>
-        </div>
-      </div>
     </div>
   );
 }
 
-export default ContactForm;
+export default ModalContactForm;

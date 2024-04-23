@@ -17,6 +17,7 @@ import RosemenLogoMobile from "@/images/Logos/R-negra.png";
 import RosemenLogoWhiteMobile from "@/images/Logos/R-Blanca.png";
 import RosemenLogoDesktop from "@/images/Logos/rosemen-512-Negro-sin-fondo.png";
 import RosemenLogoWhiteDesktop from "@/images/Logos/rosemen-512-Blanco-sin-fondo.png";
+import ModalContactForm from "@/app/contacto/subcomponents/ModalContactForm";
 
 function NavBar() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -126,82 +127,7 @@ function NavBar() {
                         </h1>
                       </ModalHeader>
                       <ModalBody>
-                        <div>
-                          <div></div>
-                          <div className="flex flex-col items-center w-full">
-                            <div className="flex flex-col md:flex-row w-full sm:gap-2 border-t pt-4">
-                              <div className="w-full">
-                                <label
-                                  htmlFor="name"
-                                  className="text-sm font-medium leading-6 text-gray-900"
-                                >
-                                  Nombre
-                                </label>
-                                <input
-                                  id="name"
-                                  name="name"
-                                  type="text"
-                                  className="w-full rounded-md border-0 py-2.5 pl-2 pr-0 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-sm sm:text-sm sm:leading-6"
-                                  placeholder="Ingresá tu Nombre"
-                                />
-                              </div>
-                              <div className="w-full">
-                                <label
-                                  htmlFor="lastname"
-                                  className="text-sm font-medium leading-6 text-gray-900"
-                                >
-                                  Apellido
-                                </label>
-                                <input
-                                  id="lastname"
-                                  name="lastname"
-                                  type="text"
-                                  className="w-full rounded-md border-0 py-2.5 pl-2 pr-0 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-sm sm:text-sm sm:leading-6"
-                                  placeholder="Ingresá tu Apellido"
-                                />
-                              </div>
-                            </div>
-
-                            <div className="w-full mt-2">
-                              <div>
-                                <label
-                                  htmlFor="phonenumber"
-                                  className="text-sm font-medium leading-6 text-gray-900"
-                                >
-                                  Número Telefónico
-                                </label>
-                                <input
-                                  id="phonenumber"
-                                  name="phonenumber"
-                                  type="tel"
-                                  className="w-full rounded-md border-0 py-2.5 pl-2 pr-0 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-sm sm:text-sm sm:leading-6"
-                                  placeholder="Ingresá tu Número de Telefóno"
-                                />
-                              </div>
-                            </div>
-
-                            <div className="w-full mt-3">
-                              <button className="bg-red-800 hover:bg-red-900 rounded-md py-2 px-2 lg:py-2 lg:px-3 text-sm font-semibold leading-6 text-white w-full">
-                                Enviar
-                              </button>
-                            </div>
-
-                            <div className="flex flex-col items-center w-full border-t mt-4">
-                              <h1 className="text-sm font-medium leading-6 text-gray-900 py-2">También te podes comunicar vía</h1>
-                              <div className="flex flex-row items-center justify-between w-full">
-                                <button className="flex flex-row items-center justify-center space-x-2 text-center border-1.5 border-neutral-300 hover:bg-neutral-50 py-2 px-3 rounded-md font-semibold leading-6 w-full ">
-                                  <MdWhatsapp className="text-xl" />
-                                  <h1>Whatsapp</h1>
-                                </button>
-                                <h1 className="mx-2">o</h1>
-                                <button className="flex flex-row items-center justify-center space-x-2 text-center border-1.5 border-neutral-300 hover:bg-neutral-50 py-2 px-3 rounded-md font-semibold leading-6 w-full ">
-                                  <MdOutlineEmail className="text-xl" />
-                                  <h1>Email</h1>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        <ModalContactForm />
                       </ModalBody>
                     </>
                   )}
