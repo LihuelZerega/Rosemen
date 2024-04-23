@@ -30,7 +30,7 @@ function ContactCta() {
       </div> */}
 
       <div className="bg-transparent">
-        <div className="mx-auto py-24 sm:py-32">
+        <div className="mx-auto pb-24 sm:pb-32">
           <div className="relative isolate overflow-hidden bg-black pt-16 md:pt-24 lg:flex lg:pt-0">
             <div className="absolute inset-0">
               <Image

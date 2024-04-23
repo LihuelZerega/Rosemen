@@ -35,9 +35,6 @@ function Benefits() {
           <h1 className="text-2xl lg:text-3xl text-center sm:text-left font-bold text-gray-900 mt-4 mb-2">
             ¿Por las que los clientes eligen nuestra agencia?
           </h1>
-          {/* <p className="text-sm">
-            Llevamos 20 años trabajando con marcas y audiencias
-          </p> */}
         </div>
         <section className="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-4 mt-12">
           <div className="flex flex-col items-center justify-center">
@@ -74,9 +71,6 @@ function Benefits() {
           </div>
         </section>
       </motion.div>
-      <div>
-        <hr className="mx-56" />
-      </div>
     </>
   );
 }
