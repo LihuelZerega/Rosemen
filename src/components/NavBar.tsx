@@ -63,23 +63,7 @@ function NavBar() {
               />
             </a>
           </div>
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <span className="sr-only">Open main menu</span>
-              <HiMenu
-                className={`h-6 w-6 ${
-                  isHomePage
-                    ? "text-gray-800 hover:text-gray-900"
-                    : "text-gray-100 hover:text-gray-200"
-                }`}
-                aria-hidden="true"
-              />
-            </button>
-          </div>
+
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <a
@@ -95,58 +79,76 @@ function NavBar() {
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+
+          <div className="flex flex-row-reverse space-x-3 lg:space-x-0 lg:flex-row lg:flex-1 lg:justify-end">
             <button
-              className="bg-red-800 hover:bg-red-900 rounded-md py-2 px-3 text-sm font-semibold leading-6 text-white"
-              onClick={onOpen}
+              type="button"
+              className="lg:hidden -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              onClick={() => setMobileMenuOpen(true)}
             >
-              Contactanos
+              <span className="sr-only">Open main menu</span>
+              <HiMenu
+                className={`h-6 w-6 ${
+                  isHomePage
+                    ? "text-gray-800 hover:text-gray-900"
+                    : "text-gray-100 hover:text-gray-200"
+                }`}
+                aria-hidden="true"
+              />
             </button>
-            <Modal
-              isOpen={isOpen}
-              onOpenChange={onOpenChange}
-              placement="top-center"
-            >
-              <ModalContent>
-                {(onClose) => (
-                  <>
-                    <ModalHeader className="flex flex-col gap-1 border-b">
-                      Completá el siguiente formulario para que podamos
-                      contactarte!
-                    </ModalHeader>
-                    <ModalBody>
-                      <div>
-                        <div></div>
+            <div className="flex">
+              <button
+                className="bg-red-800 hover:bg-red-900 rounded-md py-1 px-2 mr-4 lg:mr-0 lg:py-2 lg:px-3 text-sm font-semibold leading-6 text-white"
+                onClick={onOpen}
+              >
+                Contactanos
+              </button>
+              <Modal
+                isOpen={isOpen}
+                onOpenChange={onOpenChange}
+                placement="top-center"
+              >
+                <ModalContent>
+                  {(onClose) => (
+                    <>
+                      <ModalHeader className="flex flex-col gap-1 border-b">
+                        Completá el siguiente formulario para que podamos
+                        contactarte!
+                      </ModalHeader>
+                      <ModalBody>
                         <div>
-                          <div className="flex flex-row items-center gap-x-2">
-                            <Input
-                              label="Nombre"
-                              placeholder="Ingresá tu Nombre"
-                              variant="bordered"
-                            />
-                            <Input
-                              label="Apellido"
-                              placeholder="Ingresá tu Apellido"
-                              variant="bordered"
-                            />
-                          </div>
-                          <div className="mt-2">
-                            <Input
-                              label="Numero telefonico"
-                              placeholder="Ingresá tu Número Telefónico"
-                              variant="bordered"
-                            />
+                          <div></div>
+                          <div>
+                            <div className="flex flex-row items-center gap-x-2">
+                              <Input
+                                label="Nombre"
+                                placeholder="Ingresá tu Nombre"
+                                variant="bordered"
+                              />
+                              <Input
+                                label="Apellido"
+                                placeholder="Ingresá tu Apellido"
+                                variant="bordered"
+                              />
+                            </div>
+                            <div className="mt-2">
+                              <Input
+                                label="Numero telefonico"
+                                placeholder="Ingresá tu Número Telefónico"
+                                variant="bordered"
+                              />
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </ModalBody>
-                    <ModalFooter>
-                      <button onClick={onClose}>Enviar</button>
-                    </ModalFooter>
-                  </>
-                )}
-              </ModalContent>
-            </Modal>
+                      </ModalBody>
+                      <ModalFooter>
+                        <button onClick={onClose}>Enviar</button>
+                      </ModalFooter>
+                    </>
+                  )}
+                </ModalContent>
+              </Modal>
+            </div>
           </div>
         </nav>
 

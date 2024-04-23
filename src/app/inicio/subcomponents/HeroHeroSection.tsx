@@ -2,17 +2,28 @@
 import React from "react";
 import Image from "next/image";
 import HeroSectionBackground2 from "@/images/Backgrounds/HeroSectionBackground2.png";
+import HeroSectionBackgroundMobile2 from "@/images/Backgrounds/HeroSectionBackgroundMobile2.png";
 
 export default function HeroHeroSection() {
   return (
     <div className="bg-transparent">
-      <div className="absolute inset-0 h-screen sm:h-4/5 lg:h-2/4 xl:h-screen 2xl:h-4/5">
+      
+      <div className="block sm:hidden absolute inset-0 h-screen sm:h-4/5 lg:h-2/4 xl:h-screen 2xl:h-4/5">
+        <Image
+          className="object-cover w-full h-full opacity-100 2xl:mt-12"
+          src={HeroSectionBackgroundMobile2}
+          alt="HeroSectionBackgroundMobile2"
+        />
+      </div>
+
+      <div className="hidden lg:block absolute inset-0 h-screen sm:h-4/5 lg:h-2/4 xl:h-screen 2xl:h-4/5">
         <Image
           className="object-cover w-full h-full opacity-100 2xl:mt-12"
           src={HeroSectionBackground2}
           alt="HeroSectionBackground2"
         />
       </div>
+
 
       <section className="relative">
         <div className="w-full lg:w-1/2 lg:mx-16">
@@ -34,7 +45,7 @@ export default function HeroHeroSection() {
                   Potenciá tu marca
                 </a>
                 <a
-                  href="/sobrenosotos"
+                  href="/sobrenosotros"
                   className="text-sm font-semibold leading-6 text-neutral-800"
                 >
                   Conocenos <span aria-hidden="true">→</span>
