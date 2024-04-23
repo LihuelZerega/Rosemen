@@ -29,7 +29,7 @@ function ModalContactForm() {
     const emailBody = encodeURIComponent(
       `Nombre: ${name}\nApellido: ${lastname}\nNúmero Telefónico: ${phonenumber}\nMensaje: ${mensaje}`
     );
-    const mailtoUrl = `mailto:info@rosemen.com.ar?subject=${emailSubject}&body=${emailBody}`;
+    const mailtoUrl = `mailto:francogianini2@gmail.com?subject=${emailSubject}&body=${emailBody}`;
 
     window.location.href = mailtoUrl;
   };
