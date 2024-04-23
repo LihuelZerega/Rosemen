@@ -10,7 +10,7 @@ export default function HeroSection() {
     <div className="relative bg-black overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          className="object-cover w-full h-full opacity-50"
+          className="object-cover w-full h-full opacity-70"
           src={HeroSectionBackground4}
           alt="HeroSectionBackground4"
           layout="fill"
@@ -23,12 +23,8 @@ export default function HeroSection() {
             <div className="text-center">
               <h1 className="text-red-700 font-semibold">Contacto</h1>
               <h1 className="text-4xl sm:text-6xl lg:text-5xl xl:text-5xl font-bold tracking-tight text-neutral-100">
-                Lorem ipsum dolor sit amet
+              Completá el siguiente formulario para que podamos contactarte!
               </h1>
-              <p className="mt-6 text-lg leading-8 text-neutral-200">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                deserunt voluptas architecto omnis
-              </p>
               <div className="mt-6 flex items-center justify-center gap-x-6">
                 <motion.div
                   animate={{ y: [0, 20, 0] }}

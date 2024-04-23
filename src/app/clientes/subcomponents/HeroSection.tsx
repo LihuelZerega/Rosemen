@@ -10,7 +10,7 @@ export default function HeroSection() {
     <div className="relative bg-black overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          className="object-cover w-full h-full opacity-50"
+          className="object-cover w-full h-full opacity-70"
           src={HeroSectionBackground4}
           alt="HeroSectionBackground4"
           layout="fill"
