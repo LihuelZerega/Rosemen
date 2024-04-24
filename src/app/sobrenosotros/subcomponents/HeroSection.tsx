@@ -23,11 +23,11 @@ export default function HeroSection() {
             <div className="text-center">
               <h1 className="text-red-700  font-semibold">Sobre nosotros</h1>
               <h1 className="text-4xl sm:text-6xl lg:text-5xl xl:text-5xl font-bold tracking-tight text-neutral-100">
-                Lorem ipsum dolor sit amet
+                Experiencia y Profesionalismo
               </h1>
               <p className="mt-6 text-lg leading-8 text-neutral-200">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                deserunt voluptas architecto omnis
+                Más de 20 años generando resultados tangibles para nuestros
+                clientes.
               </p>
               <div className="mt-6 flex items-center justify-center gap-x-6">
                 <motion.div
