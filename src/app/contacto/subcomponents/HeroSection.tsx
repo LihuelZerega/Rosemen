@@ -4,16 +4,16 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { RxDoubleArrowDown } from "react-icons/rx";
 import HeroSectionBackground4 from "@/images/Backgrounds/HeroSectionBackground4.png";
-import HeroSectionBackground6 from "@/images/Backgrounds/HeroSectionBackground6.png";
+import HeroSectionBackground7 from "@/images/Backgrounds/HeroSectionBackground7.png";
 
 export default function HeroSection() {
   return (
     <div className="relative bg-black overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          className="object-cover w-full h-full opacity-70"
-          src={HeroSectionBackground4}
-          alt="HeroSectionBackground4"
+          className="object-cover w-full h-full opacity-40"
+          src={HeroSectionBackground7}
+          alt="HeroSectionBackground7"
           layout="fill"
         />
       </div>
