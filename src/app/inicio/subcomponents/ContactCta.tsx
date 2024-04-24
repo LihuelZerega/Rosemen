@@ -21,20 +21,15 @@ function ContactCta() {
                 ¿Listo para llevar tu marca <br />
                 al siguiente nivel?
               </h2>
-              <p className="mt-6 text-lg leading-8 text-gray-300">
-                Ac euismod vel sit maecenas id pellentesque eu sed consectetur.{" "}
-                <br />
-                Malesuada adipiscing sagittis vel nulla.
-              </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
-                  href="#"
+                  href="/contacto"
                   className="rounded-md bg-[#720D1C] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   ¡Contáctanos ahora!
                 </a>
                 <a
-                  href="#"
+                  href="/servicios"
                   className="text-sm font-semibold leading-6 text-white"
                 >
                   Mas informacion <span aria-hidden="true"> →</span>

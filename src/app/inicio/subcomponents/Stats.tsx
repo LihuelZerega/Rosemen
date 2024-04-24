@@ -27,9 +27,7 @@ export default function Stats() {
     <div className="bg-white pt-56 pb-24 sm:pt-32 lg:pt-36 xl:pt-44 2xl:pt-56 shadow-sm">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
-          Con la <span className="text-[#720D1C]">confianza</span> de los{" "}
-          <span className="text-[#720D1C]">artistas</span> mas influyentes de
-          nuestro <span className="text-[#720D1C]">país</span>
+          Clientes con los que <span className="text-[#720D1C]">trabajamos</span>
         </h2>
         <motion.div
           ref={ref1}
