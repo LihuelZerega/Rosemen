@@ -18,6 +18,7 @@ import Servicios5 from "@/images/Features/Servicios5.png";
 import Gafa70Player from "./Gafa70Player";
 import MotivartePlayer from "./MotivartePlayer";
 import AfadhyaPlayer from "./AfadhyaPlayer";
+import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
 
 const images = [
   { id: 1, src: Servicios1, alt: "Servicios1" },
@@ -79,7 +80,7 @@ function Features() {
         </div>
 
         {/* <hr className="mx-96 mt-12"/> */}
-        
+
         {/* <div className="flex flex-col mt-6">
           <h1 className="font-bold text-xl text-center">Formatos</h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-y-8 gap-x-4 mx-3 mt-6">
@@ -180,10 +181,23 @@ function Features() {
             </p>
           </div>
           <div className="w-full md:w-1/2 mt-12 sm:mt-6 md:mt-0">
-            <div className="flex flex-col items-center justify-center lg:pl-44 gap-y-10">
-              <Gafa70Player />
-              <MotivartePlayer />
-            </div>
+            <Tabs aria-label="Options" className="w-full" variant="underlined">
+              <Tab key="spot" title="Spot">
+                <Card>
+                  <CardBody className="flex flex-col items-center justify-center gap-y-4">
+                    <Gafa70Player />
+                    <MotivartePlayer />
+                  </CardBody>
+                </Card>
+              </Tab>
+              <Tab key="pnt" title="PNT">
+                <Card>
+                  <CardBody>
+                    <AfadhyaPlayer src="https://res.cloudinary.com/dszjgdktf/video/upload/v1713895236/LAM_-_Afadhya_s7bsuh.mp4" />
+                  </CardBody>
+                </Card>
+              </Tab>
+            </Tabs>
           </div>
         </section>
       </div>
