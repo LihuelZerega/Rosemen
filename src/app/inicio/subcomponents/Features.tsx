@@ -85,7 +85,7 @@ function Features() {
               de trabajar
             </h1>
             <p className="text-center sm:text-left">
-              Descubrí las historias de éxito detrás de nuestras colaboraciones
+              Descubrí las historias detrás de nuestras colaboraciones
               con marcas líderes. <br className="hidden md:block" />
               <span className="text-[#720D1C] font-medium hover:font-semibold hover:text-red-900 mt-4 cursor-pointer">
                 Ver mas →
