@@ -30,7 +30,7 @@ const images = [
 function Features() {
   return (
     <div>
-      <div className="max-w-2xl mx-auto text-center">
+      <div className="max-w-2xl mx-auto text-center pt-16 md:pt-28">
         <h1 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
           Servicios
         </h1>

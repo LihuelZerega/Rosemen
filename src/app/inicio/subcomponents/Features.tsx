@@ -122,8 +122,7 @@ function Features() {
               publicitario.
             </h1>
             <p className="text-center sm:text-left">
-              ¡Conocé el equipo detrás de las campañas más exitosas del mercado
-              publicitario! <br className="hidden md:block" />
+              ¡Conocé quienes somos, nuestra experiencia y enfoque! <br className="hidden md:block" />
               <span className="text-[#720D1C] font-medium hover:font-semibold hover:text-red-900 mt-4 cursor-pointer">
                 Ver mas →
               </span>
