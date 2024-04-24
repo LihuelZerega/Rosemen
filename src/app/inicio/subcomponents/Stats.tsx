@@ -51,6 +51,9 @@ export default function Stats() {
 
   return (
     <>
+      <h1 className="mt-6 text-xl text-center font-semibold text-gray-900 ">
+        Clientes con los que <span className="text">trabajamos</span>
+      </h1>
       <div className="block md:hidden max-w-7xl py-16 px-6 lg:px-8 shadow-sm">
         <div className="relative w-full max-w-lg mx-auto overflow-hidden">
           <Slider {...settingsMobile}>

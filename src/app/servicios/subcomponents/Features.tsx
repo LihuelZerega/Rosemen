@@ -40,7 +40,7 @@ function Features() {
         </p>
       </div> */}
 
-      <section className="flex flex-col my-12 max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
+      <section className="flex flex-col pb-12 max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
         <div className="flex flex-col-reverse md:flex-row items-start justify-start">
           <div className="w-full md:w-1/2 mt-6 md:mt-0">
             <Carousel options={{ loop: true }} plugins={[autoPlay()]}>

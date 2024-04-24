@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { RxDoubleArrowDown } from "react-icons/rx";
 import HeroSectionBackground4 from "@/images/Backgrounds/HeroSectionBackground4.png";
+import HeroSectionBackground6 from "@/images/Backgrounds/HeroSectionBackground6.png";
 
 export default function HeroSection() {
   return (
