@@ -6,9 +6,9 @@ import HeroSectionBackgroundMobile2 from "@/images/Backgrounds/HeroSectionBackgr
 
 export default function HeroHeroSection() {
   return (
-    <div className="bg-transparent">
+    <div className="relative bg-translate overflow-hidden">
       
-      <div className="block sm:hidden absolute inset-0 h-screen sm:h-4/5 lg:h-2/4 xl:h-screen 2xl:h-4/5">
+      <div className="block sm:hidden absolute inset-0">
         <Image
           className="object-cover w-full h-full opacity-100 2xl:mt-12"
           src={HeroSectionBackgroundMobile2}
@@ -16,9 +16,9 @@ export default function HeroHeroSection() {
         />
       </div>
 
-      <div className="hidden lg:block absolute inset-0 h-screen sm:h-4/5 lg:h-2/4 xl:h-screen 2xl:h-4/5">
+      <div className="hidden lg:block absolute inset-0">
         <Image
-          className="object-cover w-full h-full opacity-100 2xl:mt-12"
+          className="object-cover w-full h-full opacity-100"
           src={HeroSectionBackground2}
           alt="HeroSectionBackground2"
         />

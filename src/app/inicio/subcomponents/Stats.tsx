@@ -24,7 +24,7 @@ export default function Stats() {
 
 
   return (
-    <div className="bg-white pt-56 pb-24 sm:pt-32 lg:pt-36 xl:pt-44 2xl:pt-56 shadow-sm">
+    <div className="bg-white pt-16 pb-24 shadow-sm">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
           Clientes con los que <span className="text-[#720D1C]">trabajamos</span>
