@@ -1,88 +1,85 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Image from "next/image";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import YsyALogo from "@/images/Logos/YsyALogoGray.png";
 import WosLogo from "@/images/Logos/WosLogoGray.png";
 import LitKillahLogo from "@/images/Logos/LitKillahLogoGray.png";
 import BhaviLogo from "@/images/Logos/BhaviLogoGray.png";
 import NaftaLogo from "@/images/Logos/NaftaLogoGray.png";
-import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
+
+const logos = [
+  { id: 1, src: YsyALogo, alt: "YsyA" },
+  { id: 2, src: WosLogo, alt: "Wos" },
+  { id: 3, src: LitKillahLogo, alt: "LitKillahLogo" },
+  { id: 4, src: BhaviLogo, alt: "Bhavi" },
+  { id: 5, src: NaftaLogo, alt: "Nafta" },
+];
 
 export default function Stats() {
-  const [ref1, inView1] = useInView({ threshold: 0.2 });
+  const settingsMobile = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
 
-  const controls1 = useAnimation();
-
-  useEffect(() => {
-    if (inView1) {
-      controls1.start({ opacity: 1, y: 0 });
-    } else {
-      controls1.start({ opacity: 0, y: 20 });
-    }
-  }, [controls1, inView1]);
-
+  const settingsDesktop = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
 
   return (
-    <div className="bg-white pt-16 pb-24 shadow-sm">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
-          Clientes con los que <span className="text-[#720D1C]">trabajamos</span>
-        </h2>
-        <motion.div
-          ref={ref1}
-          animate={controls1}
-          initial={{ opacity: 0, y: 20 }}
-          transition={{ duration: 0.4 }}
-          className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
-        >
-          <motion.div className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80">
-            <Image
-              src={YsyALogo}
-              alt="YsyA"
-              width={158}
-              height={48}
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
-            />
-          </motion.div>
-          <motion.div className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80">
-            <Image
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
-              src={WosLogo}
-              alt="Wos"
-              width={158}
-              height={48}
-            />
-          </motion.div>
-          <motion.div className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80">
-            <Image
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
-              src={LitKillahLogo}
-              alt="LitKillahLogo"
-              width={158}
-              height={48}
-            />
-          </motion.div>
-          <motion.div className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80">
-            <Image
-              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
-              src={BhaviLogo}
-              alt="Bhavi"
-              width={158}
-              height={48}
-            />
-          </motion.div>
-          <motion.div className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80">
-            <Image
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
-              src={NaftaLogo}
-              alt="Nafta"
-              width={158}
-              height={48}
-            />
-          </motion.div>
-        </motion.div>
+    <>
+      <div className="block md:hidden max-w-7xl py-16 px-6 lg:px-8 shadow-sm">
+        <div className="relative w-full max-w-lg mx-auto overflow-hidden">
+          <Slider {...settingsMobile}>
+            {logos.map((image) => (
+              <div key={image.id}>
+                <div className="flex gap-x-8 items-center justify-center">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={400}
+                    height={300}
+                    className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
+                  />
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
-    </div>
+
+      <div className="hidden md:block py-16 px-6 lg:px-8 shadow-sm">
+        <div className="relative w-full mx-auto overflow-hidden">
+          <Slider {...settingsDesktop}>
+            {logos.map((image) => (
+              <div key={image.id}>
+                <div className="">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={400}
+                    height={300}
+                    className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
+                  />
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </div>
+    </>
   );
 }
