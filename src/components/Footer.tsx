@@ -8,7 +8,7 @@ function Footer() {
       <section className="py-10 bg-white sm:pt-16 lg:pt-24">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 w-full">
           <hr className="mb-10"/>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-y-12 gap-x-8 xl:gap-x-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-10 gap-y-12 gap-x-8 xl:gap-x-12">
             <div className="col-span-2 md:col-span-4 xl:pr-8">
               <Image
                 className="w-auto h-12"
@@ -61,7 +61,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div className="lg:col-span-2">
+            {/* <div className="lg:col-span-2">
               <p className="text-base font-semibold text-gray-900">Clientes</p>
 
               <ul className="mt-6 space-y-4">
@@ -109,7 +109,7 @@ function Footer() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             <div className="lg:col-span-2">
               <p className="text-base font-semibold text-gray-900">Sobre Nosotros</p>
