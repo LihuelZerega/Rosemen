@@ -5,17 +5,27 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import YsyALogo from "@/images/Logos/YsyALogoGray.png";
-import WosLogo from "@/images/Logos/WosLogoGray.png";
+import Grafa70Logo from "@/images/Logos/Grafa70LogoGray.png";
+import DellacasadcLogo from "@/images/Logos/DellacasadcLogoGray.png";
+import AcruLogo from "@/images/Logos/AcruLogoGray.png";
+import Baires4Logo from "@/images/Logos/Baires4LogoGray.png";
+import PulpLogo from "@/images/Logos/PulpLogoGray.png";
+import NatirutsLogo from "@/images/Logos/NatirutsLogoGray.png";
 import LitKillahLogo from "@/images/Logos/LitKillahLogoGray.png";
-import BhaviLogo from "@/images/Logos/BhaviLogoGray.png";
+import LagerHausLogo from "@/images/Logos/LagerHausLogoGray.png";
 import NaftaLogo from "@/images/Logos/NaftaLogoGray.png";
 
 const logos = [
   { id: 1, src: YsyALogo, alt: "YsyA" },
-  { id: 2, src: WosLogo, alt: "Wos" },
-  { id: 3, src: LitKillahLogo, alt: "LitKillahLogo" },
-  { id: 4, src: BhaviLogo, alt: "Bhavi" },
-  { id: 5, src: NaftaLogo, alt: "Nafta" },
+  { id: 2, src: Grafa70Logo, alt: "Wos" },
+  { id: 3, src: DellacasadcLogo, alt: "Wos" },
+  { id: 4, src: AcruLogo, alt: "Wos" },
+  { id: 5, src: Baires4Logo, alt: "Wos" },
+  { id: 6, src: PulpLogo, alt: "Wos" },
+  { id: 7, src: NatirutsLogo, alt: "Wos" },
+  { id: 8, src: LitKillahLogo, alt: "LitKillahLogo" },
+  { id: 9, src: LagerHausLogo, alt: "LagerHaus" },
+  { id: 10, src: NaftaLogo, alt: "Nafta" },
 ];
 
 export default function Stats() {
