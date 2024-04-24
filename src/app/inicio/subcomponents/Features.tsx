@@ -52,14 +52,14 @@ function Features() {
             <p className="text-center sm:text-left">
               Investigamos, planificamos, e implementamos estrategias para
               obtener resultados. <br className="hidden md:block" />
-              <span className="text-[#720D1C] font-medium hover:font-semibold hover:text-red-900 mt-4 cursor-pointer">
+              <a href="/servicios" className="text-[#720D1C] font-medium hover:font-semibold hover:text-red-900 mt-4 cursor-pointer">
                 Ver mas →
-              </span>
+              </a>
             </p>
           </div>
         </section>
 
-        <section className="flex flex-col-reverse md:flex-row-reverse items-start justify-start mt-12 lg:mt-24">
+        {/* <section className="flex flex-col-reverse md:flex-row-reverse items-start justify-start mt-12 lg:mt-24">
           <div className="w-full md:w-1/2 mt-6 md:mt-0">
             <Image src={ClientesMockup} alt="Servicios5" width={400} height={300} />
           </div>
@@ -74,9 +74,9 @@ function Features() {
             <p className="text-center sm:text-left">
               Descubrí las historias detrás de nuestras colaboraciones
               con marcas líderes. <br className="hidden md:block" />
-              <span className="text-[#720D1C] font-medium hover:font-semibold hover:text-red-900 mt-4 cursor-pointer">
+              <a href="/clientes" className="text-[#720D1C] font-medium hover:font-semibold hover:text-red-900 mt-4 cursor-pointer">
                 Ver mas →
-              </span>
+              </a>
             </p>
           </div>
         </section>
@@ -110,12 +110,12 @@ function Features() {
             </h1>
             <p className="text-center sm:text-left">
               ¡Conocé quienes somos, nuestra experiencia y enfoque! <br className="hidden md:block" />
-              <span className="text-[#720D1C] font-medium hover:font-semibold hover:text-red-900 mt-4 cursor-pointer">
+              <a href="/sobrenosotros" className="text-[#720D1C] font-medium hover:font-semibold hover:text-red-900 mt-4 cursor-pointer">
                 Ver mas →
-              </span>
+              </a>
             </p>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

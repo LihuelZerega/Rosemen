@@ -117,45 +117,34 @@ function Footer() {
               <ul className="mt-6 space-y-5">
                 <li>
                   <a
-                    href="/sobrenosotros#trayectoria"
+                    href="/sobrenosotros#quienessomos"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#720D1C] focus:text-[#720D1C]"
                   >
                     {" "}
-                    Trayectoria{" "}
+                    Quiénes Somos{" "}
                   </a>
                 </li>
 
                 <li>
                   <a
-                    href="/sobrenosotros#valoresyfilosofia"
+                    href="/sobrenosotros#nuestraexperiencia"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#720D1C] focus:text-[#720D1C]"
                   >
                     {" "}
-                    Valores y Filosofia{" "}
+                    Nuestra Experiencia{" "}
                   </a>
                 </li>
 
                 <li>
                   <a
-                    href="/sobrenosotros#reconocimiento"
+                    href="/sobrenosotros#enfoquecompetitivo"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#720D1C] focus:text-[#720D1C]"
                   >
                     {" "}
-                    Reconocimiento{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="/sobrenosotros#testimonios"
-                    title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#720D1C] focus:text-[#720D1C]"
-                  >
-                    {" "}
-                    Testimonios{" "}
+                    Enfoque{" "}
                   </a>
                 </li>
               </ul>

@@ -3,7 +3,7 @@ import React from "react";
 function Features() {
   return (
     <div className="max-w-6xl mx-auto p-6 sm:px-6 lg:px-8 pt-12 md:mt-16">
-      <div className="flex flex-col md:flex-row items-start">
+      <div id="quienessomos" className="flex flex-col md:flex-row items-start">
         <div className="w-full md:w-1/2 px-0 md:px-4">
           <h1 className="text-center md:text-left text-2xl md:text-3xl font-semibold text-gray-900">
             Quiénes Somos
@@ -16,7 +16,7 @@ function Features() {
         </div>
         <div className="w-full md:w-1/2 h-full px-0 md:px-4 flex items-center justify-center">Imagen de Referencia</div>
       </div>
-      <div className="flex flex-col md:flex-row-reverse items-start my-12 md:my-16">
+      <div id="nuestraexperiencia" className="flex flex-col md:flex-row-reverse items-start my-12 md:my-16">
         <div className="w-full md:w-1/2 px-0 md:px-4">
           <h1 className="text-center md:text-left text-2xl md:text-3xl font-semibold text-gray-900">
             Nuestra Experiencia
@@ -30,7 +30,7 @@ function Features() {
         </div>
         <div className="w-full md:w-1/2 h-full px-0 md:px-4 flex items-center justify-center">Imagen de Referencia</div>
       </div>
-      <div className="flex flex-col md:flex-row items-start">
+      <div id="enfoquecompetitivo" className="flex flex-col md:flex-row items-start">
         <div className="w-full md:w-1/2 px-0 md:px-4">
           <h1 className="text-center md:text-left text-2xl md:text-3xl font-semibold text-gray-900">
             Enfoque Competitivo

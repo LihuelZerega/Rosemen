@@ -23,7 +23,7 @@ export default function HeroSection() {
             <div className="text-center">
               <h1 className="text-red-700 font-semibold">Servicios</h1>
               <h1 className="text-4xl sm:text-6xl lg:text-5xl xl:text-5xl font-bold tracking-tight text-neutral-100">
-                Explorá como potenciamos marcas <br /> con estrategias efectivas
+                Nuestros Servicios
               </h1>
               <p className="mt-6 text-lg leading-8 text-neutral-200">
                 Investigamos, planificamos, e implementamos <br /> estrategias

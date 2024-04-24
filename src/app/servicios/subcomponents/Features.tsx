@@ -30,7 +30,7 @@ const images = [
 function Features() {
   return (
     <div>
-      <div className="max-w-2xl mx-auto text-center pt-16 md:pt-28">
+      {/* <div className="max-w-2xl mx-auto text-center pt-16 md:pt-28">
         <h1 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
           Servicios
         </h1>
@@ -38,9 +38,9 @@ function Features() {
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis.
         </p>
-      </div>
+      </div> */}
 
-      <section className="flex flex-col mt-12 lg-mt-24 max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
+      <section className="flex flex-col my-12 max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
         <div className="flex flex-col-reverse md:flex-row items-start justify-start">
           <div className="w-full md:w-1/2 mt-6 md:mt-0">
             <Carousel options={{ loop: true }} plugins={[autoPlay()]}>
@@ -78,9 +78,9 @@ function Features() {
           </div>
         </div>
 
-        <hr className="mx-96 mt-12"/>
+        {/* <hr className="mx-96 mt-12"/> */}
         
-        <div className="flex flex-col mt-6">
+        {/* <div className="flex flex-col mt-6">
           <h1 className="font-bold text-xl text-center">Formatos</h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-y-8 gap-x-4 mx-3 mt-6">
             <div className="flex flex-col items-center justify-start hover:scale-105 duration-300 hover:opacity-80">
@@ -158,7 +158,7 @@ function Features() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       <div className="bg-neutral-50">

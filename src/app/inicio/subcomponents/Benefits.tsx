@@ -28,15 +28,15 @@ function Benefits() {
         transition={{ duration: 0.4 }}
         className="mx-auto max-w-7xl py-24 px-9 lg:px-12"
       >
-        <div className="flex flex-col items-center justify-centertext-center">
+        {/* <div className="flex flex-col items-center justify-centertext-center">
           <h1 className="text-lg text-center sm:text-left font-semibold text-[#720D1C]">
             Beneficios
           </h1>
           <h1 className="text-2xl lg:text-3xl text-center sm:text-left font-bold text-gray-900 mt-4 mb-2">
             ¿Por las que los clientes eligen nuestra agencia?
           </h1>
-        </div>
-        <section className="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-4 mt-12">
+        </div> */}
+        <section className="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-4">
           <div className="flex flex-col items-center justify-center">
             <div className="flex items-center justify-center bg-gray-100 rounded-full p-6 mb-3">
               <IoPeople className="text-[#720D1C] text-4xl" />
@@ -44,7 +44,7 @@ function Benefits() {
             <h1 className="font-bold">+200 Clientes satisfechos</h1>
             <p className="text-center max-w-sm">
               Contamos con un gran historial <br className="hidden lg:block" />{" "}
-              de clientes felices
+              de clientes
             </p>
           </div>
 
@@ -65,8 +65,7 @@ function Benefits() {
             </div>
             <h1 className="font-bold">Soporte personalizado</h1>
             <p className="text-center max-w-sm">
-              Llamenos y responderemos <br className="hidden lg:block" />{" "}
-              siempre sus dudas
+              Cambiar descripcion
             </p>
           </div>
         </section>
