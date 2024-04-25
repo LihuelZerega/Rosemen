@@ -18,7 +18,7 @@ export default function HeroHeroSection() {
 
       <div className="hidden lg:block absolute inset-0">
         <Image
-          className="object-cover w-full h-full opacity-100 mt-36"
+          className="object-cover w-full h-full opacity-100 mt-24"
           src={HeroSectionBackground2}
           alt="HeroSectionBackground2"
         />
@@ -35,7 +35,6 @@ export default function HeroHeroSection() {
               </h1>
               <p className="mt-6 text-lg leading-8 text-neutral-800">
                 Contamos con más de 20 años en el mercado publicitario.
-
               </p>
               <div className="mt-10 flex items-center justify-center lg:justify-start gap-x-6">
                 <a
