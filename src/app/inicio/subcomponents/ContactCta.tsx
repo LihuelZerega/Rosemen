@@ -8,18 +8,23 @@ import NaftaBackground from "@/images/Backgrounds/Nafta.png";
 const ContactCtaBackground = [
   {
     id: 1,
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/cta/5/girl-working-on-laptop.jpg",
+    src: "https://res.cloudinary.com/dszjgdktf/image/upload/v1714077690/Cta4_uam9mc.png",
     alt: "Nafta",
   },
   {
     id: 2,
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/cta/5/girl-working-on-laptop.jpg",
-    alt: "Nafta",
+    src: "https://res.cloudinary.com/dszjgdktf/image/upload/v1714077690/Cta3_go15et.png",
+    alt: "Pulp",
   },
   {
     id: 3,
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/cta/5/girl-working-on-laptop.jpg",
-    alt: "Nafta",
+    src: "https://res.cloudinary.com/dszjgdktf/image/upload/v1714077689/Cta2_vb2owp.png",
+    alt: "Grafa70",
+  },
+  {
+    id: 4,
+    src: "https://res.cloudinary.com/dszjgdktf/image/upload/v1714077692/Cta1_ayy5zk.png",
+    alt: "WosRacing",
   },
 ];
 
@@ -33,11 +38,9 @@ function ContactCta() {
               <Carousel.Slides>
                 {ContactCtaBackground.map((image) => (
                   <Carousel.Item key={image.id}>
-                    <Image
+                    <img
                       src={image.src}
                       alt={image.alt}
-                      width={4792}
-                      height={3194}
                       className="ml-auto rounded-md"
                     />
                   </Carousel.Item>
@@ -54,26 +57,27 @@ function ContactCta() {
         <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center md:w-2/3 lg:w-1/2 xl:w-1/3 md:text-left">
             <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Contactanos
+              Contacto
             </h2>
             <p className="mt-4 text-base text-gray-200">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              molestiae eos vitae ut beatae maiores quisquam ad aperiam, saepe
+              voluptas voluptatibus labore hic necessitatibus repellendus
+              possimus numquam tempore rerum nulla!
             </p>
 
-            <div className="mt-10 flex items-center justify-start gap-x-6">
+            <div className="mt-10 flex flex-col md:flex-row items-center justify-start gap-4 md:gap-6">
               <a
                 href="/contacto"
-                className="rounded-md bg-[#720D1C] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="rounded-md bg-[#720D1C] px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-red-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 ¡Contáctanos ahora!
               </a>
               <a
                 href="/servicios"
-                className="text-sm font-semibold leading-6 text-white"
+                className="text-sm font-semibold leading-6 text-white hover:underline"
               >
-                Mas informacion <span aria-hidden="true"> →</span>
+                Más información <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>

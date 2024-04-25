@@ -11,14 +11,6 @@ import Servicios5 from "@/images/Features/Servicios5.png";
 import WosMockup from "@/images/Features/WosMockup.png";
 import ClientesMockup from "@/images/Features/ClientesMockup.png";
 
-const images = [
-  { id: 1, src: Servicios1, alt: "Servicios1" },
-  { id: 2, src: Servicios2, alt: "Servicios2" },
-  { id: 3, src: Servicios3, alt: "Servicios3" },
-  { id: 4, src: Servicios4, alt: "Servicios4" },
-  { id: 5, src: Servicios5, alt: "Servicios5" },
-];
-
 const imagescarrusel1 = [
   {
     id: 1,
