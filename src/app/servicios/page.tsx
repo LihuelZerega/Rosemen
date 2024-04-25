@@ -21,7 +21,6 @@ function page() {
       >
         <HeroSection />
       </motion.div>
-      <div className="mt-36 sm:mt-12 lg:mt-28 xl:mt-44 2xl:" />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{

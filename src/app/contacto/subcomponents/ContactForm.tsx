@@ -35,7 +35,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row-reverse md:items-start md:justify-around w-full mt-12 md:max-w-6xl md:mx-auto p-6 sm:px-6 lg:px-8">
+    <div className="flex flex-col md:flex-row-reverse md:items-start md:justify-around w-full py-12 md:max-w-6xl md:mx-auto p-6 sm:px-6 lg:px-8">
       <div className="flex flex-col w-full md:max-w-md">
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col md:flex-row w-full sm:gap-2 pt-4">

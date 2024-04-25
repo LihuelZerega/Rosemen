@@ -24,7 +24,7 @@ function Features() {
     <div className="bg-neutral-50 pb-24 lg:pb-32">
       <div className="max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
         <section className="flex flex-col-reverse md:flex-row items-start justify-start mt-12 lg:mt-24">
-          <div className="w-full md:w-1/2 mt-6 md:mt-0">
+          <div className="w-full md:w-1/2 mt-6 rounded-md md:mt-0">
             <Carousel options={{ loop: true }} plugins={[autoPlay()]}>
               <Carousel.Slides>
                 {images.map((image) => (
@@ -35,6 +35,7 @@ function Features() {
                         alt={image.alt}
                         width={400}
                         height={300}
+                        className="rounded-md"
                       />
                     </div>
                   </Carousel.Item>

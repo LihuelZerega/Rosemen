@@ -8,7 +8,7 @@ import Features from "./subcomponents/Features";
 
 function page() {
   return (
-    <div>
+    <>
       <NavBar />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ function page() {
         <Features />
       </motion.div>
       <Footer />
-    </div>
+    </>
   );
 }
 
