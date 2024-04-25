@@ -9,7 +9,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src }) => {
 
   return (
     <div>
-      <video ref={videoRef} src={src} controls />
+      <video ref={videoRef} src={src} controls className="rounded-md shadow-2xl"/>
     </div>
   );
 };

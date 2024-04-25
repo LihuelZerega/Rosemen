@@ -14,7 +14,7 @@ function Features() {
             <h1 className="text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900">
               Quiénes Somos
             </h1>
-            <p className="text-lg lg:text-2xl font-medium mt-3 text-neutral-600 lg:leading-10">
+            <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
               Hace más de 20 años que trabajamos en el mercado publicitario.
               Somos una agencia boutique especializada en pautar gran parte del
               entretenimiento y espectáculo generados en nuestro país.
@@ -30,7 +30,7 @@ function Features() {
             <h1 className="text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900">
               Nuestra Experiencia
             </h1>
-            <p className="text-lg lg:text-2xl font-medium mt-3 text-neutral-600 lg:leading-10">
+            <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
               Durante estas dos décadas, hemos establecido sólidos contactos con
               diversos proveedores de medios, lo que nos permite tener una
               influencia significativa en los costos de nuestras campañas
@@ -47,7 +47,7 @@ function Features() {
             <h1 className="text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900">
               Enfoque Competitivo
             </h1>
-            <p className="text-lg lg:text-2xl font-medium mt-3 text-neutral-600 lg:leading-10">
+            <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
               Reconocemos que el mercado publicitario es altamente competitivo.
               Por ello, nos destacamos por nuestra capacidad para ofrecer
               soluciones efectivas y rentables a nuestros clientes.

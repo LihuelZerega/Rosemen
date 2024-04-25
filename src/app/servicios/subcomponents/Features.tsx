@@ -15,9 +15,11 @@ import Servicios2 from "@/images/Features/Servicios2.png";
 import Servicios3 from "@/images/Features/Servicios3.png";
 import Servicios4 from "@/images/Features/Servicios4.png";
 import Servicios5 from "@/images/Features/Servicios5.png";
-import Gafa70Player from "./Gafa70Player";
-import MotivartePlayer from "./MotivartePlayer";
+import Gafa70Player from "./Audios/Gafa70Player";
+import MotivartePlayer from "./Audios/MotivartePlayer";
 import AfadhyaPlayer from "./AfadhyaPlayer";
+import AfadhyaAudioPlayer from "./Audios/AfadhyaAudioPlayer";
+import BtrConsulting from "./Audios/BtrConsulting";
 import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
 
 const images = [
@@ -54,6 +56,7 @@ function Features() {
                         alt={image.alt}
                         width={400}
                         height={300}
+                        className="shadow-2xl rounded-md"
                       />
                     </div>
                   </Carousel.Item>
@@ -68,7 +71,7 @@ function Features() {
             >
               Vía Pública
             </h1>
-            <p className="text-left font-medium">
+            <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
               Por su presencia en las calles, la vía pública es inevitable.
               Escogiendo ubicaciones estratégicas de acuerdo a la demanda del
               producto y trabajando con los dispositivos específicos para esa
@@ -163,44 +166,44 @@ function Features() {
       </section>
 
       <div className="bg-neutral-50">
-        <section className="flex flex-col md:flex-row items-center py-24 lg-mt-24 max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
-          <div className="flex-col w-full md:w-1/2 lg:max-w-md md:pl-4">
-            <h1
-              id="radio"
-              className="text-2xl lg:text-3xl text-center md:text-left font-bold text-[#720D1C] mb-4"
-            >
-              Radio
-            </h1>
-            <p className="text-left font-medium">
-              Cuando comparamos los diferentes medios con la radio, podemos
-              comprender que las emisoras segmentan por su target etario y
-              socioeconómico, pero lo fundamental en cuanto a su diferencia,
-              radica en la afinidad, que cada usuario define en la elección del
-              dial. Su poder se afianza en la repetición continua del mensaje,
-              lo que genera la incorporación del mismo.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2 mt-12 sm:mt-6 md:mt-0">
-            <Tabs aria-label="Options" className="w-full" variant="underlined">
-              <Tab key="spot" title="Spot">
-                <Card>
-                  <CardBody className="flex flex-col items-center justify-center gap-y-4">
-                    <Gafa70Player />
-                    <MotivartePlayer />
-                  </CardBody>
-                </Card>
-              </Tab>
-              <Tab key="pnt" title="PNT">
-                <Card>
-                  <CardBody className="rounded-md">
-                    <AfadhyaPlayer src="https://res.cloudinary.com/dszjgdktf/video/upload/v1713895236/LAM_-_Afadhya_s7bsuh.mp4"/>
-                  </CardBody>
-                </Card>
-              </Tab>
-            </Tabs>
-          </div>
-        </section>
-      </div>
+  <section className="flex flex-col md:flex-row items-center py-12 lg:py-24 max-w-6xl mx-auto px-6 sm:px-6 lg:px-8">
+    <div className="flex flex-col w-full md:w-1/2 lg:max-w-md md:pr-4">
+      <h1 className="text-3xl lg:text-4xl text-center md:text-left font-bold text-[#720D1C] mb-4">
+        Radio
+      </h1>
+      <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
+        Cuando comparamos los diferentes medios con la radio, podemos
+        comprender que las emisoras segmentan por su target etario y
+        socioeconómico, pero lo fundamental en cuanto a su diferencia,
+        radica en la afinidad, que cada usuario define en la elección del
+        dial. Su poder se afianza en la repetición continua del mensaje,
+        lo que genera la incorporación del mismo.
+      </p>
+    </div>
+    <div className="w-full md:w-1/2 mt-12 sm:mt-6 md:mt-0">
+      <Tabs aria-label="Options" className="w-full pl-4 lg:pl-20 xl:pl-24" variant="underlined" disabledKeys={["pnt"]}>
+        <Tab key="spot" title="SPOT" className="flex items-center justify-center">
+          <Card className="lg:w-2/3">
+            <CardBody className="flex flex-col items-center justify-center gap-y-4">
+              <Gafa70Player />
+              <MotivartePlayer />
+              <AfadhyaAudioPlayer />
+              <BtrConsulting />
+            </CardBody>
+          </Card>
+        </Tab>
+        <Tab key="pnt" title="PNT" className="flex items-center justify-center">
+          <Card>
+            <CardBody className="rounded-md">
+              <AfadhyaPlayer src="https://res.cloudinary.com/dszjgdktf/video/upload/v1713895236/LAM_-_Afadhya_s7bsuh.mp4" />
+            </CardBody>
+          </Card>
+        </Tab>
+      </Tabs>
+    </div>
+  </section>
+</div>
+
 
       <section className="flex flex-col md:flex-row-reverse items-center justify-between mt-12 lg:mt-24 max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
         <div className="flex-col w-full md:w-1/2 lg:max-w-md">
@@ -210,7 +213,7 @@ function Features() {
           >
             Televisión
           </h1>
-          <p className="text-left font-medium">
+          <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
             El avance exponencial de la tecnología, generando nuevas plataformas
             visuales y auditivas, ha creado una amplia diversidad, que compite
             directamente con la TV. A pesar de estas nuevas estructuras y a
