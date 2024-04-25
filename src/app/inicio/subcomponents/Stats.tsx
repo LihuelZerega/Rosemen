@@ -42,19 +42,20 @@ export default function Stats() {
   const settingsDesktop = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 200,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1300,
   };
 
   return (
     <>
-      <h1 className="pt-16 sm:mt-0 text-xl text-center font-semibold text-gray-900 ">
-        Clientes con los que <span className="text">trabajamos</span>
+      <h1 className="pt-16 pb-8 sm:mt-0 text-2xl md:text-3xl text-center font-semibold tracking-tight text-neutral-900">
+        Clientes con los que <br className="block md:hidden"/> <span className="text">trabajamos</span>
       </h1>
-      <div className="block md:hidden max-w-7xl py-16 px-6 lg:px-8 shadow-sm">
+
+      <div className="block md:hidden max-w-7xl py-16 md:my-20 px-6 lg:px-8 shadow-sm">
         <div className="relative w-full max-w-lg mx-auto overflow-hidden">
           <Slider {...settingsMobile}>
             {logos.map((image) => (
@@ -65,7 +66,7 @@ export default function Stats() {
                     alt={image.alt}
                     width={400}
                     height={300}
-                    className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
+                    className="col-span-2 max-h-14 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
                   />
                 </div>
               </div>
@@ -85,7 +86,7 @@ export default function Stats() {
                     alt={image.alt}
                     width={400}
                     height={300}
-                    className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
+                    className="col-span-2 max-h-16 w-full object-contain lg:col-span-1 hover:scale-105 duration-300 hover:opacity-80"
                   />
                 </div>
               </div>

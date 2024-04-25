@@ -39,13 +39,13 @@ export default function HeroHeroSection() {
                   href="/servicios"
                   className="rounded-md bg-red-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Potenciá tu marca
+                  Conocé nuestros servicios
                 </a>
                 <a
                   href="/sobrenosotros"
                   className="text-sm font-semibold leading-6 text-neutral-800"
                 >
-                  Conocenos <span aria-hidden="true">→</span>
+                  Nosotros <span aria-hidden="true">→</span>
                 </a>
               </div>
             </div>
