@@ -78,6 +78,15 @@ const serviciosimages = [
 function Features() {
   return (
     <div className="bg-neutral-50 pb-24 lg:pb-32">
+      <div className="max-w-2xl mx-auto text-center pt-24">
+        <h1 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+          Transformamos <br className="block lg:hidden"/> potencial en exito.
+        </h1>
+        {/* <p className="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis.
+            </p> */}
+      </div>
       <div className="max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
         {/* <section className="flex flex-col-reverse md:flex-row items-start justify-start mt-12 lg:mt-24">
           <div className="w-full md:w-1/2 mt-6 rounded-md md:mt-0">

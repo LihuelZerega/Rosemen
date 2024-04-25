@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "@/components/NavBar";
 import HeroHeroSection from "./inicio/subcomponents/HeroHeroSection";
 import Stats from "./inicio/subcomponents/Stats";
+import Strategy from "./servicios/subcomponents/Strategy";
 import Benefits from "./inicio/subcomponents/Benefits";
 import Features from "./inicio/subcomponents/Features";
 import ContactCta from "./inicio/subcomponents/ContactCta";
@@ -15,6 +16,7 @@ export default function Home() {
         <HeroHeroSection />
         <Stats />
         <Benefits />
+        <Strategy />
         <Features />
         <ContactCta />
       </div>

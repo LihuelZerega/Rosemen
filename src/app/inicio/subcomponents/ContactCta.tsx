@@ -59,12 +59,12 @@ function ContactCta() {
             <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
               Contacto
             </h2>
-            <p className="mt-4 text-base text-gray-200">
+            {/* <p className="mt-4 text-base text-gray-200">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At
               molestiae eos vitae ut beatae maiores quisquam ad aperiam, saepe
               voluptas voluptatibus labore hic necessitatibus repellendus
               possimus numquam tempore rerum nulla!
-            </p>
+            </p> */}
 
             <div className="mt-10 flex flex-col md:flex-row items-center justify-start gap-4 md:gap-6">
               <a

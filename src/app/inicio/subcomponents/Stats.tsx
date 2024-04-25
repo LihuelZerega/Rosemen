@@ -14,6 +14,8 @@ import NatirutsLogo from "@/images/Logos/NatirutsLogoGray.png";
 import LitKillahLogo from "@/images/Logos/LitKillahLogoGray.png";
 import LagerHausLogo from "@/images/Logos/LagerHausLogoGray.png";
 import NaftaLogo from "@/images/Logos/NaftaLogoGray.png";
+import StomacineLogo from "@/images/Logos/StomacineLogoGray.png";
+import MapelmanLogo from "@/images/Logos/MeapelmanLogoGray.png";
 
 const logos = [
   { id: 1, src: YsyALogo, alt: "YsyA" },
@@ -26,6 +28,8 @@ const logos = [
   { id: 8, src: LitKillahLogo, alt: "LitKillahLogo" },
   { id: 9, src: LagerHausLogo, alt: "LagerHaus" },
   { id: 10, src: NaftaLogo, alt: "Nafta" },
+  { id: 11, src: StomacineLogo, alt: "Stomacine" },
+  { id: 12, src: MapelmanLogo, alt: "Mapelman" },
 ];
 
 export default function Stats() {
@@ -52,7 +56,8 @@ export default function Stats() {
   return (
     <>
       <h1 className="pt-16 pb-8 sm:mt-0 text-2xl md:text-3xl text-center font-semibold tracking-tight text-neutral-900 opacity-90">
-        Clientes con los que <br className="block md:hidden"/> <span className="text">trabajamos</span>
+        Clientes con los que <br className="block md:hidden" />{" "}
+        <span className="text">trabajamos</span>
       </h1>
 
       <div className="block md:hidden max-w-7xl py-16 md:my-20 px-6 lg:px-8 shadow-sm">
