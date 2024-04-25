@@ -148,10 +148,9 @@ function Features() {
                 <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
                   Nosotros
                 </h2>
-                <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
+                <p className="mt-4 text-xl leading-relaxed text-gray-600">
+                  Somos una agencia boutique especializada en pautar gran parte
+                  del entretenimiento y espectáculo generados en nuestro país.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600 hover:font-semibold hover:text-[#720D1C]">
                   <a href="/sobrenosotros">Ver mas →</a>
@@ -168,10 +167,9 @@ function Features() {
                 <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
                   Servicios
                 </h2>
-                <p className="mt-4 text-base leading-relaxed text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
+                <p className="mt-4 text-xl leading-relaxed text-gray-600">
+                  Investigamos, planificamos, e implementamos estrategias para
+                  obtener resultados.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-gray-600 hover:font-semibold hover:text-[#720D1C]">
                   <a href="/servicios">Ver mas →</a>
