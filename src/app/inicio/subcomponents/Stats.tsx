@@ -51,7 +51,7 @@ export default function Stats() {
 
   return (
     <>
-      <h1 className="mt-6 text-xl text-center font-semibold text-gray-900 ">
+      <h1 className="mt-32 sm:mt-0 md:mt-48 text-xl text-center font-semibold text-gray-900 ">
         Clientes con los que <span className="text">trabajamos</span>
       </h1>
       <div className="block md:hidden max-w-7xl py-16 px-6 lg:px-8 shadow-sm">

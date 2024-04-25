@@ -192,8 +192,8 @@ function Features() {
               </Tab>
               <Tab key="pnt" title="PNT">
                 <Card>
-                  <CardBody>
-                    <AfadhyaPlayer src="https://res.cloudinary.com/dszjgdktf/video/upload/v1713895236/LAM_-_Afadhya_s7bsuh.mp4" />
+                  <CardBody className="rounded-md">
+                    <AfadhyaPlayer src="https://res.cloudinary.com/dszjgdktf/video/upload/v1713895236/LAM_-_Afadhya_s7bsuh.mp4"/>
                   </CardBody>
                 </Card>
               </Tab>

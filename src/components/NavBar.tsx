@@ -47,14 +47,14 @@ function NavBar() {
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Rosemen</span>
               <Image
-                className="h-8 w-auto block lg:hidden"
+                className="h-10 w-auto block lg:hidden"
                 src={logoMobile}
                 alt={
                   isHomePage ? "RosemenLogoMobile" : "RosemenLogoWhiteMobile"
                 }
               />
               <Image
-                className="h-8 w-auto hidden lg:block"
+                className="h-10 w-auto hidden lg:block"
                 src={logoDesktop}
                 alt={
                   isHomePage ? "RosemenLogoDesktop" : "RosemenLogoWhiteDesktop"
