@@ -51,8 +51,8 @@ function Features() {
               Potenciamos tu marca en la vía pública, radio y televisión
             </h1>
             <p className="text-center sm:text-left">
-              Investigamos, planificamos, e implementamos estrategias para
-              obtener resultados. <br className="hidden md:block" />
+              {/* Investigamos, planificamos, e implementamos estrategias para
+              obtener resultados. <br className="hidden md:block" /> */}
               <a href="/servicios" className="text-[#720D1C] font-medium hover:font-semibold hover:text-red-900 mt-4 cursor-pointer">
                 Ver mas →
               </a>

@@ -43,8 +43,8 @@ function Benefits() {
             </div>
             <h1 className="font-bold">+200 Clientes satisfechos</h1>
             <p className="text-center max-w-sm">
-              Contamos con un gran historial <br className="hidden lg:block" />{" "}
-              de clientes
+              Contamos con historial <br className="hidden lg:block" /> de
+              clientes
             </p>
           </div>
 
@@ -64,9 +64,7 @@ function Benefits() {
               <FaPhoneAlt className="text-[#720D1C] text-4xl" />
             </div>
             <h1 className="font-bold">Soporte personalizado</h1>
-            <p className="text-center max-w-sm">
-              Cambiar descripcion
-            </p>
+            <p className="text-center max-w-sm">Asistencia para tus <br className="hidden lg:block" /> necesidades</p>
           </div>
         </section>
       </motion.div>

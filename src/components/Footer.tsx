@@ -17,8 +17,8 @@ function Footer() {
               />
 
               <p className="text-base leading-relaxed text-gray-600 mt-7">
-                Más de 20 años liderando el mercado publicitario, conectando con
-                marcas y audiencias de manera impactante.
+                Más de 20 años en el mercado publicitario, conectando con
+                marcas y audiencias.
               </p>
             </div>
 
@@ -117,7 +117,7 @@ function Footer() {
               <ul className="mt-6 space-y-5">
                 <li>
                   <a
-                    href="/sobrenosotros#quienessomos"
+                    href="/sobrenosotros"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#720D1C] focus:text-[#720D1C]"
                   >
@@ -126,7 +126,7 @@ function Footer() {
                   </a>
                 </li>
 
-                <li>
+                {/* <li>
                   <a
                     href="/sobrenosotros#nuestraexperiencia"
                     title=""
@@ -146,7 +146,7 @@ function Footer() {
                     {" "}
                     Enfoque{" "}
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -156,17 +156,6 @@ function Footer() {
               </p>
 
               <ul className="mt-6 space-y-5">
-                <li>
-                  <a
-                    href="/contacto"
-                    title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#720D1C] focus:text-[#720D1C]"
-                  >
-                    {" "}
-                    Datos de Contacto{" "}
-                  </a>
-                </li>
-
                 <li>
                   <a
                     href="mailto:info@rosemen.com.ar"
@@ -185,7 +174,7 @@ function Footer() {
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#720D1C] focus:text-[#720D1C]"
                   >
                     {" "}
-                    +54 9 11-6016-1083 {" "}
+                    11-6016-1083 {" "}
                   </a>
                 </li>
 
@@ -196,7 +185,7 @@ function Footer() {
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#720D1C] focus:text-[#720D1C]"
                   >
                     {" "}
-                    +54 9 11-2824-4070{" "}
+                    11-2824-4070{" "}
                   </a>
                 </li>
               </ul>

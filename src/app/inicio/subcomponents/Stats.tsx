@@ -51,7 +51,7 @@ export default function Stats() {
 
   return (
     <>
-      <h1 className="pt-16 pb-8 sm:mt-0 text-2xl md:text-3xl text-center font-semibold tracking-tight text-neutral-900">
+      <h1 className="pt-16 pb-8 sm:mt-0 text-2xl md:text-3xl text-center font-semibold tracking-tight text-neutral-900 opacity-90">
         Clientes con los que <br className="block md:hidden"/> <span className="text">trabajamos</span>
       </h1>
 
