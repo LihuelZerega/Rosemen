@@ -120,10 +120,6 @@ function NavBar() {
                             alt="RosemenLogoMobile"
                           />
                         </div>
-                        <h1 className="text-sm md:text-base text-center mt-1">
-                          Completá el siguiente formulario para <br /> que
-                          podamos contactarte!
-                        </h1>
                       </ModalHeader>
                       <ModalBody>
                         <ModalContactForm />
