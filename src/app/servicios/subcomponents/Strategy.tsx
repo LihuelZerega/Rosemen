@@ -52,7 +52,7 @@ function Strategy() {
                   Planificación
                 </h3>
                 <p className="mt-4 text-base text-gray-600">
-                  estratégica de campanas.
+                  estratégica de campañas.
                 </p>
               </div>
 
