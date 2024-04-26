@@ -16,6 +16,9 @@ function Strategy() {
         <hr className="mt-12 mx-24 sm:mx-56 lg:mx-72 xl:mx-96" />
 
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <h1 className="pt-16 pb-8 lg:pb-0 sm:mt-0 text-2xl md:text-3xl text-center font-semibold tracking-tight text-neutral-900 opacity-90">
+            Estrategias{" "}
+          </h1>
           <div className="relative py-12 lg:py-20">
             <div className="relative grid grid-cols-1 text-center gap-y-12 md:grid-cols-3 justify-center gap-x-12">
               <div>
@@ -23,7 +26,11 @@ function Strategy() {
                   {/* <span className="text-xl font-semibold text-[#720D1C]">
                     <HiMagnifyingGlass />
                   </span> */}
-                  <Image src={PlanificacionIcon} alt="Planificacion" className="w-16 h-w-16"/>
+                  <Image
+                    src={PlanificacionIcon}
+                    alt="Planificacion"
+                    className="w-16 h-w-16"
+                  />
                 </div>
                 <h3 className="mt-6 text-xl font-semibold leading-tight text-[#720D1C] md:mt-8">
                   Planificación
@@ -38,7 +45,11 @@ function Strategy() {
                   {/* <span className="text-xl font-semibold text-[#720D1C]">
                     <IoMapOutline />
                   </span> */}
-                  <Image src={SegmentacionIcon} alt="Segmentacion" className="w-20 h-20"/>
+                  <Image
+                    src={SegmentacionIcon}
+                    alt="Segmentacion"
+                    className="w-20 h-20"
+                  />
                 </div>
                 <h3 className="mt-6 text-xl font-semibold leading-tight text-[#720D1C] md:mt-4">
                   Segmentación

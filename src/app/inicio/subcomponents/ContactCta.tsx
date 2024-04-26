@@ -31,7 +31,7 @@ const ContactCtaBackground = [
 function ContactCta() {
   return (
     <>
-      <section className="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
+      <section className="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32 shadow-2xl">
         <div className="absolute inset-0">
           <div className="object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left">
             <Carousel options={{ loop: true }} plugins={[autoPlay()]}>
