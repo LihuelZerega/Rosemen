@@ -35,6 +35,10 @@ import ViaPublica6 from "@/images/Features/ViaPublica6.png";
 import ViaPublica7 from "@/images/Features/ViaPublica7.png";
 import ViaPublica8 from "@/images/Features/ViaPublica8.png";
 import ViaPublica9 from "@/images/Features/ViaPublica9.png";
+import ViaPublica10 from "@/images/Features/ViaPublica10.png";
+import ViaPublica11 from "@/images/Features/ViaPublica11.png";
+import ViaPublica12 from "@/images/Features/ViaPublica12.png";
+import ViaPublica13 from "@/images/Features/ViaPublica13.png";
 import DigitalImage from "@/images/Features/DigitalMockup.png";
 
 const imagesMobile = [
@@ -47,6 +51,10 @@ const imagesMobile = [
   { id: 7, src: ViaPublica7, alt: "ViaPublica7" },
   { id: 8, src: ViaPublica8, alt: "ViaPublica8" },
   { id: 9, src: ViaPublica9, alt: "ViaPublica9" },
+  { id: 10, src: ViaPublica10, alt: "ViaPublica10" },
+  { id: 11, src: ViaPublica11, alt: "ViaPublica11" },
+  { id: 12, src: ViaPublica12, alt: "ViaPublica12" },
+  { id: 13, src: ViaPublica13, alt: "ViaPublica13" },
 ];
 
 const imagesDesktop = [
@@ -59,6 +67,10 @@ const imagesDesktop = [
   { id: 7, src: ViaPublica7, alt: "ViaPublica7" },
   { id: 8, src: ViaPublica8, alt: "ViaPublica8" },
   { id: 9, src: ViaPublica9, alt: "ViaPublica9" },
+  { id: 10, src: ViaPublica10, alt: "ViaPublica10" },
+  { id: 11, src: ViaPublica11, alt: "ViaPublica11" },
+  { id: 12, src: ViaPublica12, alt: "ViaPublica12" },
+  { id: 13, src: ViaPublica13, alt: "ViaPublica13" },
 ];
 
 const ImagesMobile = {
@@ -118,7 +130,7 @@ function Features() {
                 <Slider {...ImagesMobile}>
                   {imagesMobile.map((image) => (
                     <div key={image.id}>
-                      <div className="flex gap-x-8 items-center justify-center">
+                      <div className="flex gap-x-8 items-center justify-center rounded-md">
                         <Image
                           src={image.src}
                           alt={image.alt}
@@ -134,17 +146,19 @@ function Features() {
             </div>
 
             <div className="hidden md:block py-16 px-0 lg:px-0">
-              <div className="relative w-full mx-auto overflow-hidden">
+              <div className="relative w-full mx-auto overflow-hidden rounded-md">
                 <Slider {...ImagesDesktop}>
                   {imagesDesktop.map((image) => (
                     <div key={image.id}>
-                      <Image
-                        src={image.src}
-                        alt={image.alt}
-                        width={400}
-                        height={300}
-                        className="col-span-2 max-h-72 w-full object-contain lg:col-span-1 rounded-md"
-                      />
+                      <div className="rounded-md">
+                        <Image
+                          src={image.src}
+                          alt={image.alt}
+                          width={400}
+                          height={300}
+                          className="col-span-2 max-h-72 w-full object-contain lg:col-span-1 rounded-md"
+                        />
+                      </div>
                     </div>
                   ))}
                 </Slider>
