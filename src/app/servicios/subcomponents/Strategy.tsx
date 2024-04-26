@@ -1,98 +1,72 @@
 import React from "react";
+import Image from "next/image";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { IoMapOutline } from "react-icons/io5";
 import { PiHandshakeLight } from "react-icons/pi";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { BiLineChart } from "react-icons/bi";
+import PlanificacionIcon from "@/images/Logos/Planificacion.png";
+import SegmentacionIcon from "@/images/Logos/Segmentacion.png";
+import DisenoGraficoIcon from "@/images/Logos/DisenoGrafico.png";
 
 function Strategy() {
   return (
     <>
       <section className="pb-10 bg-white">
+        <hr className="mt-12 mx-24 sm:mx-56 lg:mx-72 xl:mx-96" />
+
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-
-
-          <div className="relative mt-12 lg:mt-20">
+          <div className="relative py-12 lg:py-20">
             <div className="relative grid grid-cols-1 text-center gap-y-12 md:grid-cols-3 justify-center gap-x-12">
               <div>
-                <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
-                  <span className="text-xl font-semibold text-[#720D1C]">
+                <div className="flex items-center justify-center w-16 h-16 mx-auto">
+                  {/* <span className="text-xl font-semibold text-[#720D1C]">
                     <HiMagnifyingGlass />
-                  </span>
+                  </span> */}
+                  <Image src={PlanificacionIcon} alt="Planificacion" className="w-16 h-w-16"/>
                 </div>
-                <h3 className="mt-6 text-xl font-semibold leading-tight text-[#720D1C] md:mt-10">
-                  Investigación
-                </h3>
-                <p className="mt-4 text-base text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                </p>
-              </div>
-
-              <div>
-                <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
-                  <span className="text-xl font-semibold text-[#720D1C]">
-                    <IoMapOutline />
-                  </span>
-                </div>
-                <h3 className="mt-6 text-xl font-semibold leading-tight text-[#720D1C] md:mt-10">
+                <h3 className="mt-6 text-xl font-semibold leading-tight text-[#720D1C] md:mt-8">
                   Planificación
                 </h3>
                 <p className="mt-4 text-base text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
+                  estratégica de campanas.
                 </p>
               </div>
 
               <div>
-                <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
-                  <span className="text-xl font-semibold text-[#720D1C]">
-                    <PiHandshakeLight />
-                  </span>
+                <div className="flex items-center justify-center w-20 h-w-20 mx-auto">
+                  {/* <span className="text-xl font-semibold text-[#720D1C]">
+                    <IoMapOutline />
+                  </span> */}
+                  <Image src={SegmentacionIcon} alt="Segmentacion" className="w-20 h-20"/>
                 </div>
-                <h3 className="mt-6 text-xl font-semibold leading-tight text-[#720D1C] md:mt-10">
-                  Negociación
+                <h3 className="mt-6 text-xl font-semibold leading-tight text-[#720D1C] md:mt-4">
+                  Segmentación
                 </h3>
                 <p className="mt-4 text-base text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
+                  de audiencia de campañas.
                 </p>
               </div>
 
               <div>
-                <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
-                  <span className="text-xl font-semibold text-[#720D1C]">
-                    <AiOutlineClockCircle />
-                  </span>
+                <div className="flex items-center justify-center w-14 h-14 mx-auto">
+                  <Image
+                    src={DisenoGraficoIcon}
+                    alt="Diseno Grafico"
+                    className="w-14 h-14"
+                  />
                 </div>
                 <h3 className="mt-6 text-xl font-semibold leading-tight text-[#720D1C] md:mt-10">
-                  Implementación
+                  Diseño
                 </h3>
                 <p className="mt-4 text-base text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                </p>
-              </div>
-
-              <div>
-                <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
-                  <span className="text-xl font-semibold text-[#720D1C]">
-                    <BiLineChart />
-                  </span>
-                </div>
-                <h3 className="mt-6 text-xl font-semibold leading-tight text-[#720D1C] md:mt-10">
-                  Resultados
-                </h3>
-                <p className="mt-4 text-base text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
+                  y creatividad de piezas publicitarias.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* <hr className="mt-12 mx-24 sm:mx-56 lg:mx-72 xl:mx-96" /> */}
     </>
   );
 }
