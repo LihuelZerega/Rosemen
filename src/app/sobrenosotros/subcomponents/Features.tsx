@@ -29,8 +29,8 @@ function Features() {
       className="py-12"
     >
       <div className="max-w-6xl mx-auto p-6 sm:px-6 lg:px-8 pb-12">
-        <div className="flex flex-col md:flex-row text-left">
-          <div className="w-full md:w-2/3 mr-12">
+        <div className="flex flex-col lg:flex-row text-left">
+          <div className="w-full lg:w-2/3 mr-12">
             <h1 className="text-2xl lg:text-3xl text-center md:text-left font-bold text-gray-800 mb-4">
               Hace mas de 20 años que trabajamos en el mercado publicitario.
             </h1>
@@ -55,12 +55,12 @@ function Features() {
               un mercado publicitario muy competitivo, somos competitivos.
             </p>
           </div>
-          <div className="flex flex-row md:flex-col w-full md:w-1/3">
+          <div className="flex flex-col w-full lg:w-1/3 items-center justify-center mt-6 lg:mt-0">
             <div>
-              <Image src={Sn1} alt="" className="rounded-md shadow-2xl" />
+              <Image src={Sn1} alt="" className="w-full lg:w-full rounded-md shadow-2xl" />
             </div>
             <div>
-              <Image src={Sn2} alt="" className="rounded-md shadow-2xl my-16" />
+              <Image src={Sn2} alt="" className="w-full lg:w-full rounded-md shadow-2xl my-6 md:my-16" />
             </div>
             {/* <div>
               <Image src={Sn3} alt="" className="rounded-md shadow-2xl" />

@@ -81,26 +81,8 @@ const ImagesDesktop = {
 };
 
 function Features() {
-  const [ref1, inView1] = useInView({ threshold: 0.2 });
-
-  const controls1 = useAnimation();
-
-  useEffect(() => {
-    if (inView1) {
-      controls1.start({ opacity: 1, y: 0 });
-    } else {
-      controls1.start({ opacity: 0, y: 20 });
-    }
-  }, [controls1, inView1]);
-
   return (
-    <motion.div
-      ref={ref1}
-      animate={controls1}
-      initial={{ opacity: 0, y: 20 }}
-      transition={{ duration: 0.4 }}
-      className="py-12"
-    >
+    <motion.div className="py-12">
       {/* <div className="max-w-2xl mx-auto text-center pt-16 md:pt-28">
         <h1 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
           Servicios
