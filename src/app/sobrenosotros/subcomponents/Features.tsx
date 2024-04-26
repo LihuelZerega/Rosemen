@@ -32,7 +32,7 @@ function Features() {
         <div className="flex flex-col lg:flex-row text-left">
           <div className="w-full lg:w-2/3 mr-12">
             <h1 className="text-2xl lg:text-3xl text-center md:text-left font-bold text-gray-800 mb-4">
-              Hace mas de 20 años que trabajamos en el mercado publicitario.
+              Hace más de 20 años que trabajamos en el mercado publicitario.
             </h1>
             <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
               Somos una agencia boutique que pauta gran parte del
