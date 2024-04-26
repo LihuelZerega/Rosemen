@@ -245,7 +245,7 @@ function Features() {
               Cuando comparamos los diferentes medios con la radio, podemos
               comprender que las emisoras segmentan por su target etario y
               socioeconómico, pero lo fundamental en cuanto a su diferencia,
-              radica en la afinidad, que cada usuario define en la elección del
+              radica en la afinidad que cada usuario define en la elección del
               dial. Su poder se afianza en la repetición continua del mensaje,
               lo que genera la incorporación del mismo.
             </p>

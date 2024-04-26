@@ -31,8 +31,8 @@ function NavBar() {
 
   const navigation = [
     { name: "Inicio", href: "/" },
-    { name: "Servicios", href: "/servicios" },
     { name: "Sobre Nosotros", href: "/sobrenosotros" },
+    { name: "Servicios", href: "/servicios" },
     { name: "Contacto", href: "/contacto" },
   ];
 
