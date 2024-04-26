@@ -23,7 +23,7 @@ function Strategy() {
   return (
     <>
       <section className="pb-10 bg-white">
-        <hr className="mt-12 mx-24 sm:mx-56 lg:mx-72 xl:mx-96" />
+        <hr className="border-transparent mt-12 mx-24 sm:mx-56 lg:mx-72 xl:mx-96" />
 
         <motion.div
           ref={ref1}

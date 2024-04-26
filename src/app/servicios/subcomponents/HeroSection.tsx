@@ -26,10 +26,10 @@ export default function HeroSection() {
               <h1 className="text-4xl sm:text-6xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-neutral-100">
                 Servicios
               </h1>
-              <p className="mt-6 text-lg leading-8 text-neutral-200">
+              {/* <p className="mt-6 text-lg leading-8 text-neutral-200">
                 Investigamos, planificamos, e implementamos <br /> estrategias
                 para obtener resultados.
-              </p>
+              </p> */}
               <div className="mt-6 flex items-center justify-center gap-x-6">
                 <motion.div
                   animate={{ y: [0, 20, 0] }}

@@ -22,12 +22,12 @@ export default function HeroSection() {
           <div className="mx-auto xl:mx-left lg:max-w-4xl xl:w-full px-6 xl:px-0 py-32 sm:py-48 lg:py-32">
             <div className="text-center">
               <h1 className="text-4xl sm:text-6xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-neutral-100">
-                Sobre Nosotros
+                Quienes somos
               </h1>
-              <p className="mt-6 text-lg leading-8 text-neutral-200">
+              {/* <p className="mt-6 text-lg leading-8 text-neutral-200">
                 Más de 20 años generando resultados tangibles para nuestros
                 clientes.
-              </p>
+              </p> */}
               <div className="mt-6 flex items-center justify-center gap-x-6">
                 <motion.div
                   animate={{ y: [0, 20, 0] }}

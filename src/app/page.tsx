@@ -15,9 +15,9 @@ export default function Home() {
         <NavBar />
         <HeroHeroSection />
         <Stats />
-        <Benefits />
+        {/* <Benefits /> */}
         <Strategy />
-        <Features />
+        {/* <Features /> */}
         <ContactCta />
       </div>
       <Footer />

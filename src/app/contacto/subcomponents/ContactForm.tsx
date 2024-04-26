@@ -9,6 +9,7 @@ function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     lastname: "",
+    email: "",
     phonenumber: "",
     mensaje: "",
   });
@@ -23,13 +24,13 @@ function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const { name, lastname, phonenumber, mensaje } = formData;
+    const { name, lastname, email, phonenumber, mensaje } = formData;
 
     const emailSubject = encodeURIComponent(
       "Consulta desde el formulario de contacto"
     );
     const emailBody = encodeURIComponent(
-      `Nombre: ${name}\nApellido: ${lastname}\nNúmero Telefónico: ${phonenumber}\nMensaje: ${mensaje}`
+      `Nombre: ${name}\nApellido: ${lastname}\nEmail: ${email}\nNúmero Telefónico: ${phonenumber}\nMensaje: ${mensaje}`
     );
     const mailtoUrl = `mailto:info@rosemen.com.ar?subject=${emailSubject}&body=${emailBody}`;
 
@@ -97,6 +98,24 @@ function ContactForm() {
 
           <div className="w-full mt-4">
             <label
+              htmlFor="email"
+              className="block text-sm font-medium leading-5 text-gray-900"
+            >
+              Email
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-red-800 focus:ring-red-700 sm:text-sm sm:leading-5"
+              placeholder="Ingresá tu Email"
+            />
+          </div>
+
+          <div className="w-full mt-4">
+            <label
               htmlFor="phonenumber"
               className="block text-sm font-medium leading-5 text-gray-900"
             >
@@ -158,7 +177,7 @@ function ContactForm() {
             className="mt-6 text-base text-center font-semibold leading-tight text-gray-900 md:mt-10"
           >
             {" "}
-            +54 9 11-6016-1083{" "}
+            11-6016-1083{" "}
           </a>
         </div>
         <div className="col-span-1">
@@ -173,7 +192,7 @@ function ContactForm() {
             className="mt-6 text-base text-center font-semibold leading-tight text-gray-900 md:mt-10"
           >
             {" "}
-            +54 9 11-2824-4070{" "}
+            11-2824-4070{" "}
           </a>
         </div>
         <div className="col-span-1">

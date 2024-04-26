@@ -99,8 +99,8 @@ function Features() {
       className="bg-neutral-50 pb-24 lg:pb-32"
     >
       <div className="max-w-2xl mx-auto text-center pt-24">
-        <h1 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-          Transformamos <br className="block lg:hidden" /> potencial en exito.
+        <h1 className="text-4xl font-black tracking-tight text-black sm:text-5xl lg:text-6xl">
+          Transformamos <br className="block" /> potencial en exito.
         </h1>
         {/* <p className="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
