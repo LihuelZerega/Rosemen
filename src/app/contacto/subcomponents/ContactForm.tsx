@@ -1,5 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import { FaPhone } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
@@ -34,8 +36,26 @@ function ContactForm() {
     window.location.href = mailtoUrl;
   };
 
+  const [ref1, inView1] = useInView({ threshold: 0.2 });
+
+  const controls1 = useAnimation();
+
+  useEffect(() => {
+    if (inView1) {
+      controls1.start({ opacity: 1, y: 0 });
+    } else {
+      controls1.start({ opacity: 0, y: 20 });
+    }
+  }, [controls1, inView1]);
+
   return (
-    <div className="flex flex-col md:flex-row-reverse md:items-start md:justify-around w-full py-12 md:max-w-6xl md:mx-auto p-6 sm:px-6 lg:px-8">
+    <motion.div
+      ref={ref1}
+      animate={controls1}
+      initial={{ opacity: 0, y: 20 }}
+      transition={{ duration: 0.4 }}
+      className="flex flex-col md:flex-row-reverse md:items-start md:justify-around w-full py-12 md:max-w-6xl md:mx-auto p-6 sm:px-6 lg:px-8"
+    >
       <div className="flex flex-col w-full md:max-w-md">
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col md:flex-row w-full sm:gap-2 pt-4">
@@ -172,7 +192,7 @@ function ContactForm() {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

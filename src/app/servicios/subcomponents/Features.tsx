@@ -1,5 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -79,8 +81,26 @@ const ImagesDesktop = {
 };
 
 function Features() {
+  const [ref1, inView1] = useInView({ threshold: 0.2 });
+
+  const controls1 = useAnimation();
+
+  useEffect(() => {
+    if (inView1) {
+      controls1.start({ opacity: 1, y: 0 });
+    } else {
+      controls1.start({ opacity: 0, y: 20 });
+    }
+  }, [controls1, inView1]);
+
   return (
-    <div className="py-12">
+    <motion.div
+      ref={ref1}
+      animate={controls1}
+      initial={{ opacity: 0, y: 20 }}
+      transition={{ duration: 0.4 }}
+      className="py-12"
+    >
       {/* <div className="max-w-2xl mx-auto text-center pt-16 md:pt-28">
         <h1 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
           Servicios
@@ -91,7 +111,7 @@ function Features() {
         </p>
       </div> */}
 
-      <section className="flex flex-col pb-12 max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
+      <div className="flex flex-col pb-12 max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
         <div className="flex flex-col">
           <div className="flex flex-col items-start justify-start w-full">
             <h1
@@ -231,7 +251,7 @@ function Features() {
             </div>
           </div>
         </div> */}
-      </section>
+      </div>
 
       <div className="bg-neutral-50">
         <section className="flex flex-col md:flex-row items-center py-12 lg:py-24 max-w-6xl mx-auto px-6 sm:px-6 lg:px-8">
@@ -285,7 +305,7 @@ function Features() {
         </section>
       </div>
 
-      <section className="flex flex-col md:flex-row-reverse items-center justify-between mt-12 lg:mt-24 max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
+      <div className="flex flex-col md:flex-row-reverse items-center justify-between mt-12 lg:mt-24 max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
         <div className="flex-col w-full md:w-1/2 lg:max-w-md">
           <h1
             id="television"
@@ -305,8 +325,8 @@ function Features() {
         <div className="w-full md:w-1/2 flex items-center justify-center mt-6 md:mt-0 ">
           <AfadhyaPlayer src="https://res.cloudinary.com/dszjgdktf/video/upload/v1713895236/LAM_-_Afadhya_s7bsuh.mp4" />
         </div>
-      </section>
-    </div>
+      </div>
+    </motion.div>
   );
 }
 

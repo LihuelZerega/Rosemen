@@ -1,21 +1,37 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
-import { HiMagnifyingGlass } from "react-icons/hi2";
-import { IoMapOutline } from "react-icons/io5";
-import { PiHandshakeLight } from "react-icons/pi";
-import { AiOutlineClockCircle } from "react-icons/ai";
-import { BiLineChart } from "react-icons/bi";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import PlanificacionIcon from "@/images/Logos/Planificacion.png";
 import SegmentacionIcon from "@/images/Logos/Segmentacion.png";
 import DisenoGraficoIcon from "@/images/Logos/DisenoGrafico.png";
 
 function Strategy() {
+  const [ref1, inView1] = useInView({ threshold: 0.2 });
+
+  const controls1 = useAnimation();
+
+  useEffect(() => {
+    if (inView1) {
+      controls1.start({ opacity: 1, y: 0 });
+    } else {
+      controls1.start({ opacity: 0, y: 20 });
+    }
+  }, [controls1, inView1]);
+
   return (
     <>
       <section className="pb-10 bg-white">
         <hr className="mt-12 mx-24 sm:mx-56 lg:mx-72 xl:mx-96" />
 
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <motion.div
+          ref={ref1}
+          animate={controls1}
+          initial={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.4 }}
+          className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8"
+        >
           <h1 className="pt-16 pb-8 lg:pb-0 sm:mt-0 text-2xl md:text-3xl text-center font-semibold tracking-tight text-neutral-900 opacity-90">
             Estrategias{" "}
           </h1>
@@ -76,7 +92,7 @@ function Strategy() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

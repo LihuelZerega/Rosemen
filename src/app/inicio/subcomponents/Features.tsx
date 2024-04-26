@@ -1,6 +1,8 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { Carousel } from "keep-react";
 import autoPlay from "embla-carousel-autoplay";
 import Servicios1 from "@/images/Features/Servicios1.png";
@@ -76,11 +78,29 @@ const serviciosimages = [
 ];
 
 function Features() {
+  const [ref1, inView1] = useInView({ threshold: 0.2 });
+
+  const controls1 = useAnimation();
+
+  useEffect(() => {
+    if (inView1) {
+      controls1.start({ opacity: 1, y: 0 });
+    } else {
+      controls1.start({ opacity: 0, y: 20 });
+    }
+  }, [controls1, inView1]);
+
   return (
-    <div className="bg-neutral-50 pb-24 lg:pb-32">
+    <motion.div
+      ref={ref1}
+      animate={controls1}
+      initial={{ opacity: 0, y: 20 }}
+      transition={{ duration: 0.4 }}
+      className="bg-neutral-50 pb-24 lg:pb-32"
+    >
       <div className="max-w-2xl mx-auto text-center pt-24">
         <h1 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-          Transformamos <br className="block lg:hidden"/> potencial en exito.
+          Transformamos <br className="block lg:hidden" /> potencial en exito.
         </h1>
         {/* <p className="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -337,7 +357,7 @@ function Features() {
           </div>
         </section> */}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
