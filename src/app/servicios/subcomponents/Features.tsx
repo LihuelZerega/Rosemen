@@ -35,6 +35,7 @@ import ViaPublica6 from "@/images/Features/ViaPublica6.png";
 import ViaPublica7 from "@/images/Features/ViaPublica7.png";
 import ViaPublica8 from "@/images/Features/ViaPublica8.png";
 import ViaPublica9 from "@/images/Features/ViaPublica9.png";
+import DigitalImage from "@/images/Features/DigitalMockup.png";
 
 const imagesMobile = [
   { id: 1, src: ViaPublica1, alt: "ViaPublica1" },
@@ -308,6 +309,25 @@ function Features() {
           <AfadhyaPlayer src="https://res.cloudinary.com/dszjgdktf/video/upload/v1713895236/LAM_-_Afadhya_s7bsuh.mp4" />
         </div>
       </div>
+
+      <section className="flex flex-col md:flex-row items-center py-12 lg:py-24 max-w-6xl mx-auto px-6 sm:px-6 lg:px-8">
+        <div className="flex flex-col w-full md:w-1/2">
+          <h1 className="text-3xl lg:text-4xl text-center md:text-left font-bold text-[#720D1C] mb-4">
+            Digital
+          </h1>
+          <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
+            Los medios publicitarios digitales son canales y plataformas en
+            línea que las empresas y los anunciantes utilizan para promocionar
+            sus productos, servicios o mensajes publicitarios a través de
+            estrategias de marketing digital. Estos medios permiten llegar a
+            audiencias específicas de manera eficaz a través de diversos
+            formatos publicitarios en el entorno digital.
+          </p>
+        </div>
+        <div className="w-full md:w-1/2 mt-12 sm:mt-6 md:mt-0 lg:pl-12">
+          <Image src={DigitalImage} alt="Digital" />
+        </div>
+      </section>
     </motion.div>
   );
 }

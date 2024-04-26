@@ -14,22 +14,34 @@ import NatirutsLogo from "@/images/Logos/NatirutsLogoGray.png";
 import LitKillahLogo from "@/images/Logos/LitKillahLogoGray.png";
 import LagerHausLogo from "@/images/Logos/LagerHausLogoGray.png";
 import NaftaLogo from "@/images/Logos/NaftaLogoGray.png";
-import StomacineLogo from "@/images/Logos/StomacineLogoGray.png";
+// import StomacineLogo from "@/images/Logos/StomacineLogoGray.png";
 import MapelmanLogo from "@/images/Logos/MeapelmanLogoGray.png";
+import WosLogo from "@/images/Logos/WosLogoGray.png";
+import MotivarteLogo from "@/images/Logos/MotivarteLogoGray.png";
+import InfomediaLogo from "@/images/Logos/InfomediaLogoGray.png";
+import InteresGeneralLogo from "@/images/Logos/InteresGeneralLogoGray.png";
+import ExpoholisticaLogo from "@/images/Logos/ExpoholisticaLogoGray.png";
+import VillegasRestoLogo from "@/images/Logos/VillegasLogoGray.png";
+import WinonasLogo from "@/images/Logos/WannaLogoGray.png";
 
 const logos = [
   { id: 1, src: YsyALogo, alt: "YsyA" },
-  { id: 2, src: Grafa70Logo, alt: "Wos" },
-  { id: 3, src: DellacasadcLogo, alt: "Wos" },
-  { id: 4, src: AcruLogo, alt: "Wos" },
-  { id: 5, src: Baires4Logo, alt: "Wos" },
-  { id: 6, src: PulpLogo, alt: "Wos" },
-  { id: 7, src: NatirutsLogo, alt: "Wos" },
+  { id: 2, src: Grafa70Logo, alt: "Grafa70" },
+  { id: 3, src: DellacasadcLogo, alt: "Dellacasadc" },
+  { id: 4, src: AcruLogo, alt: "Acru" },
+  { id: 5, src: WosLogo, alt: "WosLogo" },
+  { id: 6, src: PulpLogo, alt: "Pulp" },
+  { id: 7, src: NatirutsLogo, alt: "Natiruts" },
   { id: 8, src: LitKillahLogo, alt: "LitKillahLogo" },
   { id: 9, src: LagerHausLogo, alt: "LagerHaus" },
   { id: 10, src: NaftaLogo, alt: "Nafta" },
-  { id: 11, src: StomacineLogo, alt: "Stomacine" },
+  { id: 11, src: MotivarteLogo, alt: "Motivarte" },
   { id: 12, src: MapelmanLogo, alt: "Mapelman" },
+  { id: 13, src: InfomediaLogo, alt: "Infomedia" },
+  { id: 14, src: InteresGeneralLogo, alt: "InteresGeneral" },
+  { id: 15, src: ExpoholisticaLogo, alt: "Expoholistica" },
+  { id: 16, src: VillegasRestoLogo, alt: "VillegasResto" },
+  { id: 17, src: WinonasLogo, alt: "Winonas" },
 ];
 
 export default function Stats() {

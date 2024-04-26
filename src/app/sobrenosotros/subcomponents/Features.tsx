@@ -52,7 +52,7 @@ function Features() {
             </p>
             <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
               Por lo tanto, sobre nosotros, únicamente vamos a manifestar que en
-              un mercado publicitario muy competitivo, somos competitivos.
+              un mercado publicitario muy competitivo.... somos competitivos.
             </p>
           </div>
           <div className="flex flex-col w-full lg:w-1/3 items-center justify-center mt-6 lg:mt-0">
