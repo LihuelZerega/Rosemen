@@ -20,7 +20,7 @@ import WosLogo from "@/images/Logos/WosLogoGray.png";
 import MotivarteLogo from "@/images/Logos/MotivarteLogoGray.png";
 import InfomediaLogo from "@/images/Logos/InfomediaLogoGray.png";
 import InteresGeneralLogo from "@/images/Logos/InteresGeneralLogoGray.png";
-import ExpoholisticaLogo from "@/images/Logos/ExpoholisticaLogoGray.png";
+import ExpoholisticaLogo from "@/images/Logos/ExpoHolisticaLogoGray.png";
 import VillegasRestoLogo from "@/images/Logos/VillegasLogoGray.png";
 import WinonasLogo from "@/images/Logos/WannaLogoGray.png";
 
