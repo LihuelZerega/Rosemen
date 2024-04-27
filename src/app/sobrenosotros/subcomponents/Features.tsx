@@ -30,43 +30,38 @@ function Features() {
         transition={{ duration: 0.4 }}
         className="pt-12"
       >
-        <div className="max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
-          <div className="flex flex-row text-left">
-            <div className="wfull lg:w-1/2">
-              <h1 className="text-2xl lg:text-3xl text-center md:text-left font-bold text-gray-800 mb-4">
-                Hace más de 20 años que trabajamos en el mercado publicitario.
-              </h1>
-              <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
-                Somos una agencia boutique que pauta gran parte del
-                entretenimiento y del espectáculo que se genera en nuestro país.
-              </p>
-              <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
-                Estas acciones nos han permitido establecer contactos fluidos
-                con los diferentes proveedores de medios, cuyo resultado nos
-                posibilita traccionar fuertemente sobre los costos.
-              </p>
-              <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
-                Podríamos haber explicitado en esta presentación, frases como
-                «servicio personalizado», «estrategias que garanticen
-                crecimiento y visibilidad » o «calidad y talento humano», pero
-                son sólo expresiones de deseo, que se repiten en forma continua
-                en todas las aperturas de página.{" "}
-              </p>
-              <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
-                Por lo tanto, sobre nosotros, únicamente vamos a manifestar que
-                en un mercado publicitario muy competitivo.... somos
-                competitivos.
-              </p>
+        <section className="block lg:hidden">
+          <div className="max-w-6xl mx-auto p-6 sm:px-6 lg:px-8">
+            <div className="flex flex-row text-left">
+              <div className="wfull lg:w-1/2">
+                <h1 className="text-2xl lg:text-3xl text-left font-bold text-gray-800 mb-4">
+                  Hace más de 20 años que trabajamos en el mercado publicitario.
+                </h1>
+                <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
+                  Somos una agencia boutique que pauta gran parte del
+                  entretenimiento y del espectáculo que se genera en nuestro
+                  país.
+                </p>
+                <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
+                  Estas acciones nos han permitido establecer contactos fluidos
+                  con los diferentes proveedores de medios, cuyo resultado nos
+                  posibilita traccionar fuertemente sobre los costos.
+                </p>
+                <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
+                  Podríamos haber explicitado en esta presentación, frases como
+                  «servicio personalizado», «estrategias que garanticen
+                  crecimiento y visibilidad » o «calidad y talento humano», pero
+                  son sólo expresiones de deseo, que se repiten en forma
+                  continua en todas las aperturas de página.{" "}
+                </p>
+                <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
+                  Por lo tanto, sobre nosotros, únicamente vamos a manifestar
+                  que en un mercado publicitario muy competitivo.... somos
+                  competitivos.
+                </p>
+              </div>
             </div>
-            <div className="hidden lg:flex flex-col w-1/2 items-start justify-start px-12">
-              <Image
-                src={Sn4}
-                alt="Sn4"
-                className="rounded-md shadow-2xl mx-12"
-              />
-            </div>
-          </div>
-          {/* <div className="flex flex-col md:flex-row items-start">
+            {/* <div className="flex flex-col md:flex-row items-start">
           <div className="w-full md:w-1/2 px-0 md:px-4 mb-4 md:mb-0">
             <h1 className="text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900">
               Quiénes Somos
@@ -114,11 +109,56 @@ function Features() {
             <Image src={Sn3} alt="Sn3" className="rounded-md shadow-2xl" />
           </div>
         </div> */}
-        </div>
+          </div>
+
+          <div className="block lg:hidden">
+            <Image
+              src={Sn3}
+              alt=""
+              className="w-full lg:w-full shadow-2xl pb-12"
+            />
+          </div>
+        </section>
+
+        <section className="hidden lg:block max-w-6xl mx-auto">
+          <div className="flex flex-row justify-between">
+            <div className="flex flex-col items-center justify-center px-6 w-1/2">
+              <h1 className="text-2xl text-left font-bold text-gray-800 mb-4">
+                Hace más de 20 años que trabajamos en el mercado publicitario.
+              </h1>
+              <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
+                Somos una agencia boutique que pauta gran parte del
+                entretenimiento y del espectáculo que se genera en nuestro país.
+              </p>
+              <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
+                Estas acciones nos han permitido establecer contactos fluidos
+                con los diferentes proveedores de medios, cuyo resultado nos
+                posibilita traccionar fuertemente sobre los costos.
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center px-6 w-1/2">
+              <Image
+                src={Sn3}
+                alt=""
+                className="w-full rounded-md shadow-xl"
+              />
+            </div>
+          </div>
+          <div className="px-6">
+            <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
+              Podríamos haber explicitado en esta presentación, frases como
+              «servicio personalizado», «estrategias que garanticen crecimiento
+              y visibilidad » o «calidad y talento humano», pero son sólo
+              expresiones de deseo, que se repiten en forma continua en todas
+              las aperturas de página.{" "}
+            </p>
+            <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
+              Por lo tanto, sobre nosotros, únicamente vamos a manifestar que en
+              un mercado publicitario muy competitivo.... somos competitivos.
+            </p>
+          </div>
+        </section>
       </motion.div>
-      <div className="block lg:hidden">
-        <Image src={Sn3} alt="" className="w-full lg:w-full shadow-2xl pb-12" />
-      </div>
     </>
   );
 }
