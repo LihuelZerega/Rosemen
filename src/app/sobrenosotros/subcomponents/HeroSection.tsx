@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { RxDoubleArrowDown } from "react-icons/rx";
-import HeroSectionBackground11 from "@/images/Backgrounds/HeroSectionBackground11.png";
+import HeroSectionBackground5 from "@/images/Backgrounds/HeroSectionBackground5.png";
 
 export default function HeroSection() {
   return (
@@ -11,8 +11,8 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         <Image
           className="object-cover w-full h-full opacity-55"
-          src={HeroSectionBackground11}
-          alt="HeroSectionBackground11"
+          src={HeroSectionBackground5}
+          alt="HeroSectionBackground5"
           layout="fill"
         />
       </div>
