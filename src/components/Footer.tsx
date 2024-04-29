@@ -58,6 +58,17 @@ function Footer() {
                     Televisión{" "}
                   </a>
                 </li>
+
+                <li>
+                  <a
+                    href="/servicios#digital"
+                    title=""
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#720D1C] focus:text-[#720D1C]"
+                  >
+                    {" "}
+                    Digital{" "}
+                  </a>
+                </li>
               </ul>
             </div>
 

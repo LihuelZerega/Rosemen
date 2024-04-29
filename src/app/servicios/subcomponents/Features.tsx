@@ -39,38 +39,39 @@ import ViaPublica10 from "@/images/Features/ViaPublica10.png";
 import ViaPublica11 from "@/images/Features/ViaPublica11.png";
 import ViaPublica12 from "@/images/Features/ViaPublica12.png";
 import ViaPublica13 from "@/images/Features/ViaPublica13.png";
+import Baires4 from "@/images/Features/Baires4.png";
 import DigitalImage from "@/images/Features/DigitalMockup.png";
 
 const imagesMobile = [
   { id: 1, src: ViaPublica1, alt: "ViaPublica1" },
   { id: 2, src: ViaPublica2, alt: "ViaPublica2" },
   { id: 3, src: ViaPublica3, alt: "ViaPublica3" },
-  { id: 4, src: ViaPublica4, alt: "ViaPublica4" },
-  { id: 5, src: ViaPublica5, alt: "ViaPublica5" },
-  { id: 6, src: ViaPublica6, alt: "ViaPublica6" },
-  { id: 7, src: ViaPublica7, alt: "ViaPublica7" },
-  { id: 8, src: ViaPublica8, alt: "ViaPublica8" },
-  { id: 9, src: ViaPublica9, alt: "ViaPublica9" },
-  { id: 10, src: ViaPublica10, alt: "ViaPublica10" },
-  { id: 11, src: ViaPublica11, alt: "ViaPublica11" },
-  { id: 12, src: ViaPublica12, alt: "ViaPublica12" },
-  { id: 13, src: ViaPublica13, alt: "ViaPublica13" },
+  { id: 4, src: ViaPublica5, alt: "ViaPublica5" },
+  { id: 5, src: ViaPublica6, alt: "ViaPublica6" },
+  { id: 6, src: ViaPublica7, alt: "ViaPublica7" },
+  { id: 7, src: ViaPublica8, alt: "ViaPublica8" },
+  { id: 8, src: ViaPublica9, alt: "ViaPublica9" },
+  { id: 9, src: ViaPublica10, alt: "ViaPublica10" },
+  { id: 10, src: ViaPublica11, alt: "ViaPublica11" },
+  { id: 11, src: ViaPublica12, alt: "ViaPublica12" },
+  { id: 12, src: ViaPublica13, alt: "ViaPublica13" },
+  { id: 13, src: Baires4, alt: "Baires4" },
 ];
 
 const imagesDesktop = [
   { id: 1, src: ViaPublica1, alt: "ViaPublica1" },
   { id: 2, src: ViaPublica2, alt: "ViaPublica2" },
   { id: 3, src: ViaPublica3, alt: "ViaPublica3" },
-  { id: 4, src: ViaPublica4, alt: "ViaPublica4" },
-  { id: 5, src: ViaPublica5, alt: "ViaPublica5" },
-  { id: 6, src: ViaPublica6, alt: "ViaPublica6" },
-  { id: 7, src: ViaPublica7, alt: "ViaPublica7" },
-  { id: 8, src: ViaPublica8, alt: "ViaPublica8" },
-  { id: 9, src: ViaPublica9, alt: "ViaPublica9" },
-  { id: 10, src: ViaPublica10, alt: "ViaPublica10" },
-  { id: 11, src: ViaPublica11, alt: "ViaPublica11" },
-  { id: 12, src: ViaPublica12, alt: "ViaPublica12" },
-  { id: 13, src: ViaPublica13, alt: "ViaPublica13" },
+  { id: 4, src: ViaPublica5, alt: "ViaPublica5" },
+  { id: 5, src: ViaPublica6, alt: "ViaPublica6" },
+  { id: 6, src: ViaPublica7, alt: "ViaPublica7" },
+  { id: 7, src: ViaPublica8, alt: "ViaPublica8" },
+  { id: 8, src: ViaPublica9, alt: "ViaPublica9" },
+  { id: 9, src: ViaPublica10, alt: "ViaPublica10" },
+  { id: 10, src: ViaPublica11, alt: "ViaPublica11" },
+  { id: 11, src: ViaPublica12, alt: "ViaPublica12" },
+  { id: 12, src: ViaPublica13, alt: "ViaPublica13" },
+  { id: 13, src: Baires4, alt: "Baires4" },
 ];
 
 const ImagesMobile = {
@@ -326,16 +327,17 @@ function Features() {
 
       <section className="flex flex-col md:flex-row items-center py-12 lg:py-24 max-w-6xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="flex flex-col w-full md:w-1/2">
-          <h1 className="text-3xl lg:text-4xl text-center md:text-left font-bold text-[#720D1C] mb-4">
+          <h1
+            id="digital"
+            className="text-3xl lg:text-4xl text-center md:text-left font-bold text-[#720D1C] mb-4"
+          >
             Digital
           </h1>
           <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
             Los medios publicitarios digitales son canales y plataformas en
-            línea que las empresas y los anunciantes utilizan para promocionar
-            sus productos, servicios o mensajes publicitarios a través de
-            estrategias de marketing digital. Estos medios permiten llegar a
-            audiencias específicas de manera eficaz a través de diversos
-            formatos publicitarios en el entorno digital.
+            línea. Estos soportes permiten llegar a audiencias específicas tanto
+            en su target socioeconómico como en su target etario, y lo hace de
+            manera eficaz a través de diversos formatos publicitarios.
           </p>
         </div>
         <div className="w-full md:w-1/2 mt-12 sm:mt-6 md:mt-0 lg:pl-12">

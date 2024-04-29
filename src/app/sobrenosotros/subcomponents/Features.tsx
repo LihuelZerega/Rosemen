@@ -149,7 +149,11 @@ function Features() {
               </p>
             </div>
             <div className="flex flex-col items-center justify-center px-6 w-1/2">
-              <Image src={Sn3} alt="" className="w-full rounded-md shadow-xl mt-12" />
+              <Image
+                src={Sn3}
+                alt=""
+                className="w-full rounded-md shadow-xl mt-12"
+              />
             </div>
           </div>
         </section>
