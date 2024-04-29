@@ -131,7 +131,7 @@ function Features() {
                 entretenimiento y del espectáculo que se genera en nuestro país.
               </p>
               <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
-                Estas acciones nos han permitido establecer contactos fluidos
+                Estas acciones nos han permitido establecer contactos fluídos
                 con los diferentes proveedores de medios, cuyo resultado nos
                 posibilita traccionar fuertemente sobre los costos.
               </p>
