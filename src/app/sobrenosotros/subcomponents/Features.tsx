@@ -38,26 +38,25 @@ function Features() {
                   Hace más de 20 años que trabajamos en el mercado publicitario.
                 </h1>
                 <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
-                  Somos una agencia boutique que pauta gran parte del
-                  entretenimiento y del espectáculo que se genera en nuestro
-                  país.
+                Somos una agencia boutique que pauta gran parte del
+                entretenimiento y del espectáculo que se genera en nuestro país.
                 </p>
                 <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
-                  Estas acciones nos han permitido establecer contactos fluidos
-                  con los diferentes proveedores de medios, cuyo resultado nos
-                  posibilita traccionar fuertemente sobre los costos.
+                Estas acciones nos han permitido establecer contactos fluídos
+                con los diferentes proveedores de medios, cuyo resultado nos
+                posibilita traccionar fuertemente sobre los costos.
                 </p>
                 <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
-                  Podríamos haber explicitado en esta presentación, frases como
-                  «servicio personalizado», «estrategias que garanticen
-                  crecimiento y visibilidad » o «calidad y talento humano», pero
-                  son sólo expresiones de deseo, que se repiten en forma
-                  continua en todas las aperturas de página.{" "}
+                Podríamos haber explicitado en esta presentación, frases como
+                «servicio personalizado», «estrategias que garanticen
+                crecimiento y visibilidad » o «calidad y talento humano», pero
+                son sólo expresiones de deseo, que se repiten en forma contínua
+                en todas las aperturas de página.{" "}
                 </p>
                 <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
-                  Por lo tanto, sobre nosotros, únicamente vamos a manifestar
-                  que en un mercado publicitario muy competitivo.... somos
-                  competitivos.
+                Por lo tanto, sobre nosotros, únicamente vamos a manifestar que
+                en un mercado publicitario muy competitivo.... somos
+                competitivos.
                 </p>
               </div>
             </div>
