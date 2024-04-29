@@ -139,7 +139,7 @@ function Features() {
                 Podríamos haber explicitado en esta presentación, frases como
                 «servicio personalizado», «estrategias que garanticen
                 crecimiento y visibilidad » o «calidad y talento humano», pero
-                son sólo expresiones de deseo, que se repiten en forma continua
+                son sólo expresiones de deseo, que se repiten en forma contínua
                 en todas las aperturas de página.{" "}
               </p>
               <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">

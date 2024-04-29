@@ -336,8 +336,8 @@ function Features() {
           <p className="text-lg lg:text-xl font-medium mt-3 text-neutral-600 lg:leading-8">
             Los medios publicitarios digitales son canales y plataformas en
             línea. Estos soportes permiten llegar a audiencias específicas tanto
-            en su target socioeconómico como en su target etario, y lo hace de
-            manera eficaz a través de diversos formatos publicitarios.
+            en su target socioeconómico como en su target etario y lo hace de
+            manera eficaz, a través de diversos formatos publicitarios.
           </p>
         </div>
         <div className="w-full md:w-1/2 mt-12 sm:mt-6 md:mt-0 lg:pl-12">
