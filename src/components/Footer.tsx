@@ -180,12 +180,12 @@ function Footer() {
 
                 <li>
                   <a
-                    href="tel:+5491160161083"
+                    href="tel:+5491164215790"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#720D1C] focus:text-[#720D1C]"
                   >
                     {" "}
-                    11-6016-1083 {" "}
+                    11 6421-5790 {" "}
                   </a>
                 </li>
 

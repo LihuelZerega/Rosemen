@@ -39,6 +39,7 @@ import ViaPublica10 from "@/images/Features/ViaPublica10.png";
 import ViaPublica11 from "@/images/Features/ViaPublica11.png";
 import ViaPublica12 from "@/images/Features/ViaPublica12.png";
 import ViaPublica13 from "@/images/Features/ViaPublica13.png";
+import ViaPublica14 from "@/images/Features/ViaPublica14.png";
 import Baires4 from "@/images/Features/Baires4.png";
 import DigitalImage from "@/images/Features/DigitalMockup.png";
 
@@ -56,6 +57,7 @@ const imagesMobile = [
   { id: 11, src: ViaPublica12, alt: "ViaPublica12" },
   { id: 12, src: ViaPublica13, alt: "ViaPublica13" },
   { id: 13, src: Baires4, alt: "Baires4" },
+  { id: 14, src: ViaPublica14, alt: "ViaPublica14" },
 ];
 
 const imagesDesktop = [
@@ -72,6 +74,7 @@ const imagesDesktop = [
   { id: 11, src: ViaPublica12, alt: "ViaPublica12" },
   { id: 12, src: ViaPublica13, alt: "ViaPublica13" },
   { id: 13, src: Baires4, alt: "Baires4" },
+  { id: 14, src: ViaPublica14, alt: "ViaPublica14" },
 ];
 
 const ImagesMobile = {

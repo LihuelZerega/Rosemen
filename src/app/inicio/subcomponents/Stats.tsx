@@ -22,6 +22,7 @@ import ExpoholisticaLogo from "@/images/Logos/ExpoHolisticaLogoGray.png";
 import VillegasRestoLogo from "@/images/Logos/VillegasLogoGray.png";
 import WinonasLogo from "@/images/Logos/WannaLogoGray.png";
 import Expografica from "@/images/Logos/ExpograficaLogoGray.png";
+import CaballerosDeLaQuemaLogo from "@/images/Logos/CaballerosDeLaQuemaLogoGray.png";
 
 const logos = [
   { id: 1, src: YsyALogo, alt: "YsyA" },
@@ -42,6 +43,7 @@ const logos = [
   { id: 16, src: VillegasRestoLogo, alt: "VillegasResto" },
   { id: 17, src: WinonasLogo, alt: "Winonas" },
   { id: 18, src: Expografica, alt: "Expografica" },
+  { id: 19, src: CaballerosDeLaQuemaLogo, alt: "CaballerosDeLaQuema" },
 ];
 
 export default function Stats() {
