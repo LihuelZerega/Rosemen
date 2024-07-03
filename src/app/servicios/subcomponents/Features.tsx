@@ -170,88 +170,6 @@ function Features() {
             </div>
           </div>
         </div>
-
-        {/* <hr className="mx-96 mt-12"/> */}
-
-        {/* <div className="flex flex-col mt-6">
-          <h1 className="font-bold text-xl text-center">Formatos</h1>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-y-8 gap-x-4 mx-3 mt-6">
-            <div className="flex flex-col items-center justify-start hover:scale-105 duration-300 hover:opacity-80">
-              <Image
-                src={CarapantallaMunicipalIcon}
-                width={32}
-                height={32}
-                alt="CarapantallaMunicipalIcon"
-              />
-              <div className="text-center font-medium mt-2">
-                <h1>Carapantallas</h1>
-                <h1>municipales</h1>
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center justify-start hover:scale-105 duration-300 hover:opacity-80">
-              <Image
-                src={CuatroXCuatroIcon}
-                width={40}
-                height={40}
-                alt="CuatroXCuatroIcon"
-              />
-              <div className="text-xl font-medium mt-3">
-                <h1>4x4</h1>
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center justify-start hover:scale-105 duration-300 hover:opacity-80">
-              <Image
-                src={FrontlightIcon}
-                width={55}
-                height={55}
-                alt="FrontlightIcon"
-              />
-              <div className="text-xl font-medium mt-3">
-                <h1>Frontlight</h1>
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center justify-start hover:scale-105 duration-300 hover:opacity-80">
-              <Image src={TotemIcon} width={50} height={50} alt="TotemIcon" />
-              <div className="text-xl font-medium mt-1">
-                <h1>Totem</h1>
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center justify-start hover:scale-105 duration-300 hover:opacity-80">
-              <Image
-                src={SextupleIcon}
-                width={80}
-                height={80}
-                alt="SextupleIcon"
-              />
-              <div className="text-xl font-medium mt-3.5">
-                <h1>Sextuple</h1>
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center justify-start hover:scale-105 duration-300 hover:opacity-80">
-              <Image src={PPLIcon} width={30} height={30} alt="PPLIcon" />
-              <div className="text-xl font-medium mt-3">
-                <h1>PPL</h1>
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center justify-start hover:scale-105 duration-300 hover:opacity-80">
-              <Image
-                src={HipervallasIcon}
-                width={150}
-                height={150}
-                alt="HipervallasIcon"
-              />
-              <div className="text-xl font-medium mt-3">
-                <h1>Hipervallas</h1>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
 
       <div className="bg-neutral-50">
@@ -297,7 +215,7 @@ function Features() {
               >
                 <Card>
                   <CardBody className="rounded-md">
-                    <AfadhyaPlayer src="https://res.cloudinary.com/dszjgdktf/video/upload/v1713895236/LAM_-_Afadhya_s7bsuh.mp4" />
+                    <AfadhyaPlayer src="https://res.cloudinary.com/dys0jotat/video/upload/v1720019068/LAM_-_Afadhya_1_rybirl.mp4" />
                   </CardBody>
                 </Card>
               </Tab>
@@ -324,7 +242,7 @@ function Features() {
           </p>
         </div>
         <div className="w-full md:w-1/2 flex items-center justify-center mt-6 md:mt-0 ">
-          <AfadhyaPlayer src="https://res.cloudinary.com/dszjgdktf/video/upload/v1713895236/LAM_-_Afadhya_s7bsuh.mp4" />
+          <AfadhyaPlayer src="https://res.cloudinary.com/dys0jotat/video/upload/v1720019068/LAM_-_Afadhya_1_rybirl.mp4" />
         </div>
       </div>
 

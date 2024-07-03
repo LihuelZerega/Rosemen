@@ -2,7 +2,7 @@ import React from "react";
 
 const AudioPlayer = () => {
   const audioUrl =
-    "https://res.cloudinary.com/dszjgdktf/video/upload/v1713894950/Spot-Motivarte_luoj9n.mp3";
+    "https://res.cloudinary.com/dys0jotat/video/upload/v1720019010/Spot_Motivarte_1_rr0joj.wav";
 
   return (
     <div>
